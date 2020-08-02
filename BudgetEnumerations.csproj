@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E4815FC-F938-48BF-AF14-676F61AB5F30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BudgetExecution</RootNamespace>
+    <AssemblyName>BudgetEnumerations</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>etc\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="etc\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Availability.cs" />
+    <Compile Include="src\AwardType.cs" />
+    <Compile Include="src\BFY.cs" />
+    <Compile Include="src\BOC.cs" />
+    <Compile Include="src\ChartType.cs" />
+    <Compile Include="src\DataType.cs" />
+    <Compile Include="src\Date.cs" />
+    <Compile Include="src\Document.cs" />
+    <Compile Include="src\ExpenseType.cs" />
+    <Compile Include="src\EXT.cs" />
+    <Compile Include="src\Field.cs" />
+    <Compile Include="src\FromTo.cs" />
+    <Compile Include="src\FundCode.cs" />
+    <Compile Include="src\Holiday.cs" />
+    <Compile Include="src\ImageFormat.cs" />
+    <Compile Include="src\ImageSizer.cs" />
+    <Compile Include="src\ImageSource.cs" />
+    <Compile Include="src\Level.cs" />
+    <Compile Include="src\Net.cs" />
+    <Compile Include="src\NPM.cs" />
+    <Compile Include="src\Numeric.cs" />
+    <Compile Include="src\PrimaryKey.cs" />
+    <Compile Include="src\Provider.cs" />
+    <Compile Include="src\RC.cs" />
+    <Compile Include="src\RPIO.cs" />
+    <Compile Include="src\Source.cs" />
+    <Compile Include="src\SQL.cs" />
+    <Compile Include="src\STAT.cs" />
+    <Compile Include="src\Tool.cs" />
+    <Compile Include="src\TransferType.cs" />
+    <Compile Include="src\UI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="etc\logo.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
