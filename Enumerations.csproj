@@ -48,6 +48,7 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Logic.cs" />
     <Compile Include="src\Resource.cs" />
     <Compile Include="src\Availability.cs" />
     <Compile Include="src\AwardType.cs" />
