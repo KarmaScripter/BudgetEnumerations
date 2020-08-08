@@ -43,13 +43,10 @@
     <None Include="etc\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\Logic.cs" />
-    <Compile Include="src\Resource.cs" />
     <Compile Include="src\Availability.cs" />
     <Compile Include="src\AwardType.cs" />
     <Compile Include="src\BFY.cs" />
