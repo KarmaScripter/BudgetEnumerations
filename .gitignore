@@ -256,16 +256,16 @@ ServiceFabricBackup/
 # SQLite Database files
 *.db
 
-# Budget Execution Files
+# BudgetEnumeration Files
 *.exe
 [Ll]ib/
 [Ee]tc/
 [Dd]b/
 [Dd]atabases/
+.editorconfig
 
 # Settings and Condfiguration files
-*.DotSettings
-*.editorconfig
+BudgetEnumerations.DotSettings.user
 
 # Business Intelligence projects
 *.rdl.data
