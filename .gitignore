@@ -256,7 +256,7 @@ ServiceFabricBackup/
 # SQLite Database files
 *.db
 
-# BudgetEnumeration Files
+# Budget Enumerations Files
 *.exe
 [Ll]ib/
 [Ee]tc/
