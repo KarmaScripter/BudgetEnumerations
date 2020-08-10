@@ -43,7 +43,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic.cs" />
+    <None Include=".editorconfig" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Availability.cs" />
     <Compile Include="AwardType.cs" />
     <Compile Include="BFY.cs" />
@@ -62,6 +69,7 @@
     <Compile Include="ImageSizer.cs" />
     <Compile Include="ImageSource.cs" />
     <Compile Include="Level.cs" />
+    <Compile Include="Logic.cs" />
     <Compile Include="Net.cs" />
     <Compile Include="NPM.cs" />
     <Compile Include="Numeric.cs" />
@@ -75,14 +83,6 @@
     <Compile Include="Tool.cs" />
     <Compile Include="TransferType.cs" />
     <Compile Include="UI.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".editorconfig" />
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".gitattributes" />
-    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
