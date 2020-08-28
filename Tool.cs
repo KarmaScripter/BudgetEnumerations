@@ -22,6 +22,21 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
 
         /// <summary>
+        /// The access button
+        /// </summary>
+        AccessButton,
+
+        /// <summary>
+        /// The add button
+        /// </summary>
+        AddButton,
+
+        /// <summary>
+        /// The account button
+        /// </summary>
+        AccountButton,
+
+        /// <summary>
         /// The first button
         /// </summary>
         FirstButton,
@@ -30,6 +45,16 @@ namespace BudgetExecution
         /// The previous button
         /// </summary>
         PreviousButton,
+
+        /// <summary>
+        /// The menu button
+        /// </summary>
+        MenuButton,
+
+        /// <summary>
+        /// The menu interface button
+        /// </summary>
+        MenuInterfaceButton,
 
         /// <summary>
         /// The next button
@@ -42,9 +67,24 @@ namespace BudgetExecution
         LastButton,
 
         /// <summary>
+        /// The logout button
+        /// </summary>
+        LogoutButton,
+
+        /// <summary>
         /// The refresh button
         /// </summary>
         RefreshButton,
+
+        /// <summary>
+        /// The remove button
+        /// </summary>
+        RemoveButton,
+
+        /// <summary>
+        /// The rewind button
+        /// </summary>
+        RewindButton,
 
         /// <summary>
         /// The undo button
@@ -52,9 +92,24 @@ namespace BudgetExecution
         UndoButton,
 
         /// <summary>
+        /// The upload button
+        /// </summary>
+        UploadButton,
+
+        /// <summary>
+        /// The verify button
+        /// </summary>
+        VerifyButton,
+        
+        /// <summary>
         /// The save button
         /// </summary>
         SaveButton,
+
+        /// <summary>
+        /// The chart button
+        /// </summary>
+        ChartButton,
 
         /// <summary>
         /// The calculator button
@@ -62,9 +117,14 @@ namespace BudgetExecution
         CalculatorButton,
 
         /// <summary>
-        /// The excel button
+        /// The close button
         /// </summary>
-        ExcelButton,
+        CloseButton,
+
+        /// <summary>
+        /// The copy button
+        /// </summary>
+        CopyButton,
 
         /// <summary>
         /// The browse button
@@ -74,7 +134,17 @@ namespace BudgetExecution
         /// <summary>
         /// The data table button
         /// </summary>
-        DataTableButton,
+        TableButton,
+
+        /// <summary>
+        /// The trash button
+        /// </summary>
+        TrashButton,
+
+        /// <summary>
+        /// The transfer button
+        /// </summary>
+        TransferButton,
 
         /// <summary>
         /// The exit button
@@ -82,29 +152,9 @@ namespace BudgetExecution
         ExitButton,
 
         /// <summary>
-        /// The navigation button
+        /// The email button
         /// </summary>
-        NavigationButton,
-
-        /// <summary>
-        /// The insert button
-        /// </summary>
-        InsertButton,
-
-        /// <summary>
-        /// The delete button
-        /// </summary>
-        DeleteButton,
-
-        /// <summary>
-        /// The add button
-        /// </summary>
-        AddButton,
-
-        /// <summary>
-        /// The PDF button
-        /// </summary>
-        PdfButton,
+        EmailButton,
 
         /// <summary>
         /// The export button
@@ -112,9 +162,9 @@ namespace BudgetExecution
         ExportButton,
 
         /// <summary>
-        /// The import button
+        /// The excel button
         /// </summary>
-        ImportButton,
+        ExcelButton,
 
         /// <summary>
         /// The edit button
@@ -122,8 +172,103 @@ namespace BudgetExecution
         EditButton,
 
         /// <summary>
+        /// The forward button
+        /// </summary>
+        ForwardButton,
+
+        /// <summary>
+        /// The guidance button
+        /// </summary>
+        GuidanceButton,
+
+        /// <summary>
+        /// The navigation button
+        /// </summary>
+        NavigationButton,
+
+        /// <summary>
+        /// Creates new button.
+        /// </summary>
+        NewButton,
+
+        /// <summary>
+        /// The insert button
+        /// </summary>
+        InsertButton,
+
+        /// <summary>
+        /// The import button
+        /// </summary>
+        ImportButton,
+
+        /// <summary>
+        /// The delete button
+        /// </summary>
+        DeleteButton,
+
+        /// <summary>
+        /// The download button
+        /// </summary>
+        DownloadButton,
+
+        /// <summary>
+        /// The pause button
+        /// </summary>
+        PauseButton,
+
+        /// <summary>
+        /// The play button
+        /// </summary>
+        PlayButton,
+
+        /// <summary>
+        /// The power point button
+        /// </summary>
+        PowerPointButton,
+
+        /// <summary>
+        /// The print button
+        /// </summary>
+        PrintButton,
+
+        /// <summary>
+        /// The printer button
+        /// </summary>
+        PrinterButton,
+
+        /// <summary>
+        /// The PDF button
+        /// </summary>
+        PdfButton,
+
+        /// <summary>
+        /// The settings button
+        /// </summary>
+        SettingsButton,
+
+        /// <summary>
+        /// The skip button
+        /// </summary>
+        SkipButton,
+
+        /// <summary>
+        /// The stop button
+        /// </summary>
+        StopButton,
+
+        /// <summary>
         /// The update button
         /// </summary>
-        UpdateButton
+        UpdateButton,
+
+        /// <summary>
+        /// The web button
+        /// </summary>
+        WebButton,
+
+        /// <summary>
+        /// The word button
+        /// </summary>
+        WordButton
     }
 }
