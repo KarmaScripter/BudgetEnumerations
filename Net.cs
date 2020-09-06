@@ -4,6 +4,10 @@
 
 namespace BudgetExecution
 {
+    // ********************************************************************************************************************************
+    // *********************************************************  ASSEMBLIES   ********************************************************
+    // ********************************************************************************************************************************
+
     using System;
     using System.Threading;
 
@@ -16,19 +20,21 @@ namespace BudgetExecution
     /// </summary>
     public enum Net
     {
+        NS = 0,
+
         /// <summary>
         /// Defines the Zero
         /// </summary>
-        Zero = 0,
+        Zero = 1,
 
         /// <summary>
         /// Defines the Increase
         /// </summary>
-        Increase = 1,
+        Increase = 2,
 
         /// <summary>
         /// Defines the Decrease
         /// </summary>
-        Decrease = 2
+        Decrease = 3
     }
 }

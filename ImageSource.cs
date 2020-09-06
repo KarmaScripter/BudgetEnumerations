@@ -2,11 +2,14 @@
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
-using System;
-
 namespace BudgetExecution
 {
+    // ********************************************************************************************************************************
+    // *********************************************************  ASSEMBLIES   ********************************************************
+    // ********************************************************************************************************************************
+
     using System.Threading;
+    using System;
 
     /// <summary>
     /// Respresent key values in the Images section
@@ -22,7 +25,7 @@ namespace BudgetExecution
         /// <summary>
         /// The ns
         /// </summary>
-        NS,
+        NS = 0,
 
         /// <summary>
         /// The object class icons

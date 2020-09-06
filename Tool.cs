@@ -22,6 +22,11 @@ namespace BudgetExecution
         // ***************************************************************************************************************************
 
         /// <summary>
+        /// The ns
+        /// </summary>
+        NS = 0,
+
+        /// <summary>
         /// The access button
         /// </summary>
         AccessButton,
