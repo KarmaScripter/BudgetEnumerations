@@ -1,4 +1,4 @@
-﻿// <copyright file = "ImageSource.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "RPIO.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
@@ -12,14 +12,12 @@ namespace BudgetExecution
     using System;
 
     /// <summary>
-    /// Respresent key values in the Images section
-    /// of the App.Config file; The values for each
-    /// key comprise the paths to the image files;
+    /// 
     /// </summary>
-    public enum ImageSource
+    public enum RPIO
     {
         // ******************************************************************************************************************************
-        // ******************************************************    MEMBERS     ********************************************************
+        // ******************************************************   MEMBERS   ***********************************************************
         // ******************************************************************************************************************************
 
         /// <summary>
@@ -28,143 +26,173 @@ namespace BudgetExecution
         NS = 0,
 
         /// <summary>
-        /// The object class icons
+        /// RPIO-01
         /// </summary>
-        ObjectClassIcons,
+        R01,
 
         /// <summary>
-        /// The object class images
+        /// RPIO-02
         /// </summary>
-        ObjectClassImages,
+        R02,
 
         /// <summary>
-        /// The summary images
+        /// RPIO-03
         /// </summary>
-        SummaryImages,
+        R03,
 
         /// <summary>
-        /// The database images
+        /// RPIO-04
         /// </summary>
-        Databases,
+        R04,
 
         /// <summary>
-        /// The data icons
+        /// RPIO-05
         /// </summary>
-        DataIcons,
+        R05,
 
         /// <summary>
-        /// The office icons
+        /// RPIO-06
         /// </summary>
-        OfficeIcons,
+        R06,
 
         /// <summary>
-        /// The navigation icons
+        /// RPIO-07
         /// </summary>
-        NavigationIcons,
+        R07,
 
         /// <summary>
-        /// The format icons
+        /// RPIO-08
         /// </summary>
-        FormatIcons,
+        R08,
 
         /// <summary>
-        /// The outlay icons
+        /// RPIO-09
         /// </summary>
-        OutlayIcons,
+        R09,
 
         /// <summary>
-        /// The outlay images
+        /// RPIO-10
         /// </summary>
-        OutlayImages,
+        R10,
 
         /// <summary>
-        /// The file icons
+        /// RPIO-11
         /// </summary>
-        FileIcons,
+        R11,
 
         /// <summary>
-        /// The provider icons
+        /// RPIO-13
         /// </summary>
-        ProviderIcons,
+        R13,
 
         /// <summary>
-        /// The math icons
+        /// RPIO-PIO-16
         /// </summary>
-        MathIcons,
+        R16,
 
         /// <summary>
-        /// The mail icons
+        /// RPIO-17
         /// </summary>
-        MailIcons,
+        R17,
 
         /// <summary>
-        /// The interface icons
+        /// RPIO-18
         /// </summary>
-        InterfaceIcons,
+        R18,
 
         /// <summary>
-        /// The division images
+        /// RPIO-20
         /// </summary>
-        DivisionImages,
+        R20,
 
         /// <summary>
-        /// The division icons
+        /// RPIO-26
         /// </summary>
-        DivisionIcons,
+        R26,
 
         /// <summary>
-        /// The folder icons
+        /// RPIO-30
         /// </summary>
-        FolderIcons,
+        R30,
 
         /// <summary>
-        /// The division caption
+        /// RPIO-35
         /// </summary>
-        DivisionCaption,
+        R35,
 
         /// <summary>
-        /// The fund images
+        /// RPIO-39
         /// </summary>
-        FundImages,
+        R39,
 
         /// <summary>
-        /// The employee icons
+        /// RPIO-75
         /// </summary>
-        EmployeeIcons,
+        R75,
 
         /// <summary>
-        /// The main form images
+        /// RPIO-77
         /// </summary>
-        MainFormImages,
+        R77,
 
         /// <summary>
-        /// The execution images
+        /// RPIO-92
         /// </summary>
-        ExecutionImages,
+        R92,
 
         /// <summary>
-        /// The execution icons
+        /// RPIO-94
         /// </summary>
-        ExecutionIcons,
+        R94,
 
         /// <summary>
-        /// The loader images
+        /// RPIO-95
         /// </summary>
-        LoaderImages,
+        R95,
 
         /// <summary>
-        /// The identification icons
+        /// RPIO-98
         /// </summary>
-        IdentificationIcons,
+        R98,
 
         /// <summary>
-        /// The reference images
+        /// RPIO-09 b
         /// </summary>
-        ReferenceImages,
+        R9B,
 
         /// <summary>
-        /// The toolbar
+        /// RPIO-09 h
         /// </summary>
-        ToolBar
+        R9H,
+
+        /// <summary>
+        /// RPIO-09 p
+        /// </summary>
+        R9P,
+
+        /// <summary>
+        /// RPIO-09 r
+        /// </summary>
+        R9R,
+
+        /// <summary>
+        /// RPIO-09 v
+        /// </summary>
+        R9V,
+
+        /// <summary>
+        /// RPIO-09 z
+        /// </summary>
+        R9Z,
+
+        /// <summary>
+        /// HQ
+        /// </summary>
+        HQ,
+
+        /// <summary>
+        /// RPIO-RT
+        /// </summary>
+        RT
     }
 }

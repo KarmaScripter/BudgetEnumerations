@@ -1,4 +1,4 @@
-﻿// <copyright file = "ExpenseType.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "RC.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
@@ -8,56 +8,86 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
     using System.Threading;
+    using System;
 
     /// <summary>
-    /// Defines the ExpenseType
+    /// 
     /// </summary>
-    public enum ExpenseType
+    public enum RC
     {
         // ******************************************************************************************************************************
         // ******************************************************   MEMBERS   ***********************************************************
         // ******************************************************************************************************************************
 
         /// <summary>
-        /// Defines the None
+        /// Represents the none
         /// </summary>
         NS = 0,
 
         /// <summary>
-        /// Defines the Commitment
+        /// Represents the Region 06
         /// </summary>
-        Commitment,
+        R6 = 1,
 
         /// <summary>
-        /// Defines the OpenCommitment
+        /// Represents the Office of the Regional Administrator
         /// </summary>
-        OpenCommitment,
+        ORA,
 
         /// <summary>
-        /// Defines the Obligation
+        /// Represents the Mission Support Division
         /// </summary>
-        Obligation,
+        MSD,
 
         /// <summary>
-        /// Defines the ULO
+        /// Represents the Superfunds And Emergency Management Division
         /// </summary>
-        ULO,
+        SEMD,
 
         /// <summary>
-        /// The deobligation
+        /// Represents the Land, Chemical, And Revitalization Division
         /// </summary>
-        Deobligation,
+        LCARD,
 
         /// <summary>
-        /// Defines the Expenditure
+        /// Represents the Laboratory Services and Applied Sciences Division
         /// </summary>
-        Expenditure,
+        LSASD,
 
         /// <summary>
-        /// Defines the All
+        /// Represents the Water Division
         /// </summary>
-        All
+        WD,
+
+        /// <summary>
+        /// Represents the Office of Regional Counsel
+        /// </summary>
+        ORC,
+
+        /// <summary>
+        /// Represents the External Affairs Division
+        /// </summary>
+        XA,
+
+        /// <summary>
+        /// Represents the Working Capital Fund
+        /// </summary>
+        WCF,
+
+        /// <summary>
+        /// Represents the Workforce Support Account
+        /// </summary>
+        WSA,
+
+        /// <summary>
+        /// Represents the Mission Support Reserve
+        /// </summary>
+        MSR,
+
+        /// <summary>
+        /// Represents the Enforcement And Compliance Division
+        /// </summary>
+        ECAD
     }
 }

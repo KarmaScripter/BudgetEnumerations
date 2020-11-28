@@ -86,23 +86,38 @@ namespace BudgetExecution
         DOC,
 
         /// <summary>
-        /// The SQL
+        /// Identifies SQL files
         /// </summary>
         SQL,
 
         /// <summary>
-        /// The RESX
+        /// Identififes .resx file extension for resource files
         /// </summary>
         RESX,
 
         /// <summary>
-        /// The DLL
+        /// Identifies .dll extension for libraries
         /// </summary>
         DLL,
 
         /// <summary>
-        /// The executable
+        /// Identifies the .exe file extenstion for executables
         /// </summary>
-        EXE
+        EXE,
+
+        /// <summary>
+        /// Identifies the .ico file extension for icons
+        /// </summary>
+        ICO,
+
+        /// <summary>
+        /// Identifies the .png file extension for images
+        /// </summary>
+        PNG,
+
+        /// <summary>
+        /// Identifies the .gif file extension for gifs
+        /// </summary>
+        GIF
     }
 }

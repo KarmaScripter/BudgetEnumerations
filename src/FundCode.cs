@@ -1,4 +1,4 @@
-﻿// <copyright file = "Date.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "FundCode.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
@@ -8,225 +8,231 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
-    using System.Diagnostics.CodeAnalysis;
     using System.Threading;
+    using System;
 
-    [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
-    public enum Date
+    /// <summary>
+    /// Defines the FundCode
+    /// </summary>
+    public enum FundCode
     {
         // ******************************************************************************************************************************
         // ******************************************************   MEMBERS   ***********************************************************
         // ******************************************************************************************************************************
 
         /// <summary>
-        /// The ns
+        /// Defines the None
         /// </summary>
         NS = 0,
 
         /// <summary>
-        /// The closed date
+        /// Defines the B
         /// </summary>
-        ClosedDate,
+        B,
 
         /// <summary>
-        /// The request date
+        /// Defines the BR
         /// </summary>
-        RequestDate,
+        BR,
 
         /// <summary>
-        /// The document date
+        /// Defines the BR1
         /// </summary>
-        DocumentDate,
+        BR1,
 
         /// <summary>
-        /// The check date
+        /// Defines the BR2
         /// </summary>
-        CheckDate,
+        BR2,
 
         /// <summary>
-        /// The invoice date
+        /// Defines the BR3
         /// </summary>
-        InvoiceDate,
+        BR3,
 
         /// <summary>
-        /// The approved date
+        /// Defines the T
         /// </summary>
-        ApprovedDate,
+        T,
 
         /// <summary>
-        /// The modified date
+        /// Defines the TC
         /// </summary>
-        ModifiedDate,
+        TC,
 
         /// <summary>
-        /// The start date
+        /// Defines the TD
         /// </summary>
-        StartDate,
+        TD,
 
         /// <summary>
-        /// The end date
+        /// Defines the TR
         /// </summary>
-        EndDate,
+        TR,
 
         /// <summary>
-        /// The approval date
+        /// Defines the TR1
         /// </summary>
-        ApprovalDate,
+        TR1,
 
         /// <summary>
-        /// The date
+        /// Defines the TR2
         /// </summary>
-        Date,
+        TR2,
 
         /// <summary>
-        /// The departure date
+        /// Defines the TR2A
         /// </summary>
-        DepartureDate,
+        TR2A,
 
         /// <summary>
-        /// The return date
+        /// Defines the TR2B
         /// </summary>
-        ReturnDate,
+        TR2B,
 
         /// <summary>
-        /// The original action date
+        /// Defines the TR3
         /// </summary>
-        OriginalActionDate,
+        TR3,
 
         /// <summary>
-        /// The service date
+        /// The t s3
         /// </summary>
-        ServiceDate,
+        TS3,
 
         /// <summary>
-        /// The hire date
+        /// Defines the F
         /// </summary>
-        HireDate,
+        F,
 
         /// <summary>
-        /// The grade entry date
+        /// Defines the FC
         /// </summary>
-        GradeEntryDate,
+        FC,
 
         /// <summary>
-        /// The step entry date
+        /// Defines the FD
         /// </summary>
-        StepEntryDate,
+        FD,
 
         /// <summary>
-        /// The wigi due date
+        /// The fr
         /// </summary>
-        WigiDueDate,
+        FR,
 
         /// <summary>
-        /// The processed date
+        /// Defines the FS3
         /// </summary>
-        ProcessedDate,
+        FS3,
 
         /// <summary>
-        /// The calendar date
+        /// Defines the H
         /// </summary>
-        CalendarDate,
+        H,
 
         /// <summary>
-        /// The date issued
+        /// Defines the HR
         /// </summary>
-        DateIssued,
+        HR,
 
         /// <summary>
-        /// The enacted date
+        /// Defines the HC
         /// </summary>
-        EnactedDate,
+        HC,
 
         /// <summary>
-        /// The bfy
+        /// Defines the HD
         /// </summary>
-        BFY,
+        HD,
 
         /// <summary>
-        /// The bbfy
+        /// Defines the E
         /// </summary>
-        BBFY,
+        E,
 
         /// <summary>
-        /// The ebfy
+        /// Defines the E1
         /// </summary>
-        EBFY,
+        E1,
 
         /// <summary>
-        /// The first year
+        /// Defines the E1C
         /// </summary>
-        FirstYear,
+        E1C,
 
         /// <summary>
-        /// The last year
+        /// Defines the E1D
         /// </summary>
-        LastYear,
+        E1D,
 
         /// <summary>
-        /// The last action date
+        /// Defines the E1S3
         /// </summary>
-        LastActionDate,
+        E1S3,
 
         /// <summary>
-        /// The cancellation date
+        /// Defines the E2
         /// </summary>
-        CancellationDate,
+        E2,
 
         /// <summary>
-        /// Creates new years.
+        /// Defines the E2C
         /// </summary>
-        NewYears,
+        E2C,
 
         /// <summary>
-        /// The martin luther king
+        /// Defines the E2D
         /// </summary>
-        MartinLutherKing,
+        E2D,
 
         /// <summary>
-        /// The presidents
+        /// Defines the E3
         /// </summary>
-        Presidents,
+        E3,
 
         /// <summary>
-        /// The memorial
+        /// Defines the E3C
         /// </summary>
-        Memorial,
+        E3C,
 
         /// <summary>
-        /// The independence
+        /// Defines the E3D
         /// </summary>
-        Independence,
+        E3D,
 
         /// <summary>
-        /// The veterans
+        /// Defines the E4
         /// </summary>
-        Veterans,
+        E4,
 
         /// <summary>
-        /// The labor
+        /// Defines the E4C
         /// </summary>
-        Labor,
+        E4C,
 
         /// <summary>
-        /// The columbus
+        /// Defines the E4D
         /// </summary>
-        Columbus,
+        E4D,
 
         /// <summary>
-        /// The thanksgiving
+        /// Defines the E5
         /// </summary>
-        Thanksgiving,
+        E5,
 
         /// <summary>
-        /// The christmas
+        /// Defines the E5C
         /// </summary>
-        Christmas,
+        E5C,
 
         /// <summary>
-        /// The time
+        /// Defines the E5D
         /// </summary>
-        Time
+        E5D,
+
+        /// <summary>
+        /// Defines the ZL
+        /// </summary>
+        ZL
     }
 }

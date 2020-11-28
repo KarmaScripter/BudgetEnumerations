@@ -1,4 +1,4 @@
-﻿// <copyright file = "Availability.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "OutlayType.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
@@ -12,32 +12,52 @@ namespace BudgetExecution
     using System.Threading;
 
     /// <summary>
-    /// Defines the Fiscal Year Availability of Appropriated Funds
+    /// Defines the OutlayType
     /// </summary>
-    public enum Availability
+    public enum OutlayType
     {
         // ******************************************************************************************************************************
         // ******************************************************   MEMBERS   ***********************************************************
         // ******************************************************************************************************************************
 
         /// <summary>
-        /// The none
+        /// Defines the None
         /// </summary>
         NS = 0,
 
         /// <summary>
-        /// The expirirng
+        /// Defines the Commitment
         /// </summary>
-        Expiring = 1,
+        Commitment,
 
         /// <summary>
-        /// The mulit year
+        /// Defines the OpenCommitment
         /// </summary>
-        MultiYear = 2,
+        OpenCommitment,
 
         /// <summary>
-        /// The no year
+        /// Defines the Obligation
         /// </summary>
-        NoYear
+        Obligation,
+
+        /// <summary>
+        /// Defines the ULO
+        /// </summary>
+        ULO,
+
+        /// <summary>
+        /// The deobligation
+        /// </summary>
+        Deobligation,
+
+        /// <summary>
+        /// Defines the Expenditure
+        /// </summary>
+        Expenditure,
+
+        /// <summary>
+        /// Defines the All
+        /// </summary>
+        All
     }
 }

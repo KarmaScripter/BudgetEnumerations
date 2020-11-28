@@ -1,4 +1,4 @@
-﻿// <copyright file = "FundCode.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "EventDate.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
@@ -8,231 +8,175 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System.Threading;
     using System;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Threading;
 
-    /// <summary>
-    /// Defines the FundCode
-    /// </summary>
-    public enum FundCode
+    [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
+    public enum EventDate
     {
         // ******************************************************************************************************************************
         // ******************************************************   MEMBERS   ***********************************************************
         // ******************************************************************************************************************************
 
         /// <summary>
-        /// Defines the None
+        /// The ns
         /// </summary>
         NS = 0,
 
         /// <summary>
-        /// Defines the B
+        /// The closed date
         /// </summary>
-        B,
+        ClosedDate,
 
         /// <summary>
-        /// Defines the BR
+        /// The request date
         /// </summary>
-        BR,
+        RequestDate,
 
         /// <summary>
-        /// Defines the BR1
+        /// The document date
         /// </summary>
-        BR1,
+        DocumentDate,
 
         /// <summary>
-        /// Defines the BR2
+        /// The check date
         /// </summary>
-        BR2,
+        CheckDate,
 
         /// <summary>
-        /// Defines the BR3
+        /// The invoice date
         /// </summary>
-        BR3,
+        InvoiceDate,
 
         /// <summary>
-        /// Defines the T
+        /// The approved date
         /// </summary>
-        T,
+        ApprovedDate,
 
         /// <summary>
-        /// Defines the TC
+        /// The modified date
         /// </summary>
-        TC,
+        ModifiedDate,
 
         /// <summary>
-        /// Defines the TD
+        /// The start date
         /// </summary>
-        TD,
+        StartDate,
 
         /// <summary>
-        /// Defines the TR
+        /// The end date
         /// </summary>
-        TR,
+        EndDate,
 
         /// <summary>
-        /// Defines the TR1
+        /// The approval date
         /// </summary>
-        TR1,
+        ApprovalDate,
 
         /// <summary>
-        /// Defines the TR2
+        /// The date
         /// </summary>
-        TR2,
+        Date,
 
         /// <summary>
-        /// Defines the TR2A
+        /// The departure date
         /// </summary>
-        TR2A,
+        DepartureDate,
 
         /// <summary>
-        /// Defines the TR2B
+        /// The return date
         /// </summary>
-        TR2B,
+        ReturnDate,
 
         /// <summary>
-        /// Defines the TR3
+        /// The original action date
         /// </summary>
-        TR3,
+        OriginalActionDate,
 
         /// <summary>
-        /// Defines the F
+        /// The service date
         /// </summary>
-        F,
+        ServiceDate,
 
         /// <summary>
-        /// Defines the FC
+        /// The hire date
         /// </summary>
-        FC,
+        HireDate,
 
         /// <summary>
-        /// Defines the FD
+        /// The grade entry date
         /// </summary>
-        FD,
+        GradeEntryDate,
 
         /// <summary>
-        /// The fr
+        /// The step entry date
         /// </summary>
-        FR,
+        StepEntryDate,
 
         /// <summary>
-        /// Defines the H
+        /// The wigi due date
         /// </summary>
-        H,
+        WigiDueDate,
 
         /// <summary>
-        /// Defines the HR
+        /// The processed date
         /// </summary>
-        HR,
+        ProcessedDate,
 
         /// <summary>
-        /// Defines the HC
+        /// The calendar date
         /// </summary>
-        HC,
+        CalendarDate,
 
         /// <summary>
-        /// Defines the HD
+        /// The date issued
         /// </summary>
-        HD,
+        DateIssued,
 
         /// <summary>
-        /// Defines the E
+        /// The enacted date
         /// </summary>
-        E,
+        EnactedDate,
 
         /// <summary>
-        /// Defines the E1
+        /// The bfy
         /// </summary>
-        E1,
+        BFY,
 
         /// <summary>
-        /// Defines the E1C
+        /// The bbfy
         /// </summary>
-        E1C,
+        BBFY,
 
         /// <summary>
-        /// Defines the E1D
+        /// The ebfy
         /// </summary>
-        E1D,
+        EBFY,
 
         /// <summary>
-        /// Defines the E1S3
+        /// The first year
         /// </summary>
-        E1S3,
+        FirstYear,
 
         /// <summary>
-        /// Defines the E2
+        /// The last year
         /// </summary>
-        E2,
+        LastYear,
 
         /// <summary>
-        /// Defines the E2C
+        /// The last action date
         /// </summary>
-        E2C,
+        LastActionDate,
 
         /// <summary>
-        /// Defines the E2D
+        /// The cancellation date
         /// </summary>
-        E2D,
+        CancellationDate,
 
         /// <summary>
-        /// Defines the E3
+        /// The time
         /// </summary>
-        E3,
-
-        /// <summary>
-        /// Defines the E3C
-        /// </summary>
-        E3C,
-
-        /// <summary>
-        /// Defines the E3D
-        /// </summary>
-        E3D,
-
-        /// <summary>
-        /// Defines the E4
-        /// </summary>
-        E4,
-
-        /// <summary>
-        /// Defines the E4C
-        /// </summary>
-        E4C,
-
-        /// <summary>
-        /// Defines the E4D
-        /// </summary>
-        E4D,
-
-        /// <summary>
-        /// Defines the E5
-        /// </summary>
-        E5,
-
-        /// <summary>
-        /// Defines the E5C
-        /// </summary>
-        E5C,
-
-        /// <summary>
-        /// Defines the E5D
-        /// </summary>
-        E5D,
-
-        /// <summary>
-        /// Defines the ZL
-        /// </summary>
-        Zl,
-
-        /// <summary>
-        /// Defines the FS3
-        /// </summary>
-        FS3,
-
-        /// <summary>
-        /// Defines the TS3
-        /// </summary>
-        TS3
+        Time
     }
 }
