@@ -1,2 +1,2 @@
 # BudgetEnumerations
-The enumerations used in the Budget Execution tool.
+The enumerations used in Budget Execution.  Compiled separately as DLL library and referenced.
