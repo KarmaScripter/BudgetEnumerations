@@ -1,2 +1,2 @@
 # BudgetEnumerations
-The enumerations for the BudgetExecution Application: a federal budgeting and accounting application being developed in C# for use by the US EPA, Region 6 - Budget Operations Section.
+The enumerations used in Budget Execution.  Compiled separately as DLL library and referenced.
