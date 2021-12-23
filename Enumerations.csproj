@@ -40,19 +40,116 @@
     <ApplicationIcon>Ninja.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Syncfusion.Licensing, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BudgetStatic\lib\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BudgetStatic\lib\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Base, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BudgetStatic\lib\Syncfusion.Tools.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BudgetStatic\lib\Syncfusion.Tools.Windows.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VisualPlus, Version=0.4.1.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BudgetStatic\lib\VisualPlus.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="App.config" />
-    <None Include="BudgetExecution.DotSettings" />
+    <None Include="lib\MetroSet UI.dll.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <Content Include="lib\BudgetStatic.dll" />
+    <Content Include="lib\CharmNotification.dll" />
+    <Content Include="lib\DataGridViewExtension.dll" />
+    <Content Include="lib\EPPlus.dll" />
+    <Content Include="lib\EPPlus.XML" />
+    <Content Include="lib\Expander.dll" />
+    <Content Include="lib\LinqStatistics.dll" />
+    <Content Include="lib\MetroSet UI.dll" />
+    <Content Include="lib\SQLite.Designer.dll" />
+    <Content Include="lib\SQLite.Designer.xml" />
+    <Content Include="lib\Syncfusion.Calculate.Base.dll" />
+    <Content Include="lib\Syncfusion.Calculate.Base.xml" />
+    <Content Include="lib\Syncfusion.Calculate.Windows.dll" />
+    <Content Include="lib\Syncfusion.Calculate.Windows.xml" />
+    <Content Include="lib\Syncfusion.Chart.Base.dll" />
+    <Content Include="lib\Syncfusion.Chart.Base.xml" />
+    <Content Include="lib\Syncfusion.Chart.Windows.dll" />
+    <Content Include="lib\Syncfusion.Chart.Windows.xml" />
+    <Content Include="lib\Syncfusion.Compression.Base.dll" />
+    <Content Include="lib\Syncfusion.Compression.Base.xml" />
+    <Content Include="lib\Syncfusion.Data.WinForms.dll" />
+    <Content Include="lib\Syncfusion.Data.WinForms.xml" />
+    <Content Include="lib\Syncfusion.DataSource.WinForms.dll" />
+    <Content Include="lib\Syncfusion.DataSource.WinForms.xml" />
+    <Content Include="lib\Syncfusion.Grid.Base.dll" />
+    <Content Include="lib\Syncfusion.Grid.Base.xml" />
+    <Content Include="lib\Syncfusion.Grid.Windows.dll" />
+    <Content Include="lib\Syncfusion.Grid.Windows.xml" />
+    <Content Include="lib\Syncfusion.Licensing.dll" />
+    <Content Include="lib\Syncfusion.Office2016Theme.WinForms.dll" />
+    <Content Include="lib\Syncfusion.Office2016Theme.WinForms.xml" />
+    <Content Include="lib\Syncfusion.Office2019Theme.WinForms.dll" />
+    <Content Include="lib\Syncfusion.Office2019Theme.WinForms.xml" />
+    <Content Include="lib\Syncfusion.Pdf.Base.dll" />
+    <Content Include="lib\Syncfusion.Pdf.Base.xml" />
+    <Content Include="lib\Syncfusion.Pdf.Windows.dll" />
+    <Content Include="lib\Syncfusion.Pdf.Windows.xml" />
+    <Content Include="lib\Syncfusion.PdfViewer.Windows.dll" />
+    <Content Include="lib\Syncfusion.PdfViewer.Windows.xml" />
+    <Content Include="lib\Syncfusion.PivotAnalysis.Base.dll" />
+    <Content Include="lib\Syncfusion.PivotAnalysis.Base.xml" />
+    <Content Include="lib\Syncfusion.PivotAnalysis.Windows.dll" />
+    <Content Include="lib\Syncfusion.PivotAnalysis.Windows.xml" />
+    <Content Include="lib\Syncfusion.PivotChart.Windows.dll" />
+    <Content Include="lib\Syncfusion.PivotChart.Windows.xml" />
+    <Content Include="lib\Syncfusion.PivotConverter.Windows.dll" />
+    <Content Include="lib\Syncfusion.PivotConverter.Windows.xml" />
+    <Content Include="lib\Syncfusion.Shared.Base.dll" />
+    <Content Include="lib\Syncfusion.Shared.Base.xml" />
+    <Content Include="lib\Syncfusion.Shared.Windows.dll" />
+    <Content Include="lib\Syncfusion.Shared.Windows.xml" />
+    <Content Include="lib\Syncfusion.Spreadsheet.Windows.dll" />
+    <Content Include="lib\Syncfusion.Spreadsheet.Windows.xml" />
+    <Content Include="lib\Syncfusion.SpreadsheetHelper.Windows.dll" />
+    <Content Include="lib\Syncfusion.SpreadsheetHelper.Windows.xml" />
+    <Content Include="lib\Syncfusion.Tools.Base.dll" />
+    <Content Include="lib\Syncfusion.Tools.Base.xml" />
+    <Content Include="lib\Syncfusion.Tools.Windows.dll" />
+    <Content Include="lib\Syncfusion.Tools.Windows.xml" />
+    <Content Include="lib\Syncfusion.XlsIO.Base.dll" />
+    <Content Include="lib\Syncfusion.XlsIO.Base.xml" />
+    <Content Include="lib\System.Data.SqlServerCe.dll" />
+    <Content Include="lib\VisualPlus.dll" />
     <Content Include="Ninja.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
     <Compile Include="FederalHoliday.cs" />
     <Compile Include="IconResource.cs" />
     <Compile Include="FundAvailability.cs" />
@@ -63,6 +160,12 @@
     <Compile Include="DataType.cs" />
     <Compile Include="EventDate.cs" />
     <Compile Include="Document.cs" />
+    <Compile Include="Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message.designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
     <Compile Include="OutlayType.cs" />
     <Compile Include="EXT.cs" />
     <Compile Include="Field.cs" />
@@ -88,6 +191,13 @@
     <Compile Include="TransferType.cs" />
     <Compile Include="UI.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
