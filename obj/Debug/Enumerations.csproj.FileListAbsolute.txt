@@ -1,0 +1,6 @@
+C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.dll
+C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.pdb
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.CoreCompileInputs.cache
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.dll
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.pdb
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.AssemblyReference.cache
