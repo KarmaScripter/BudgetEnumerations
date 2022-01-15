@@ -143,11 +143,11 @@
     <Content Include="lib\VisualPlus.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Error.cs">
+    <Compile Include="EnumerationError.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Error.Designer.cs">
-      <DependentUpon>Error.cs</DependentUpon>
+    <Compile Include="EnumerationError.Designer.cs">
+      <DependentUpon>EnumerationError.cs</DependentUpon>
     </Compile>
     <Compile Include="FederalHoliday.cs" />
     <Compile Include="IconResource.cs" />
@@ -191,8 +191,8 @@
     <Compile Include="UI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Error.resx">
-      <DependentUpon>Error.cs</DependentUpon>
+    <EmbeddedResource Include="EnumerationError.resx">
+      <DependentUpon>EnumerationError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
