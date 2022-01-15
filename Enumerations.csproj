@@ -77,7 +77,6 @@
     <None Include="lib\MetroSet UI.dll.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="lib\BudgetStatic.dll" />
     <Content Include="lib\CharmNotification.dll" />
@@ -142,7 +141,6 @@
     <Content Include="lib\Syncfusion.XlsIO.Base.xml" />
     <Content Include="lib\System.Data.SqlServerCe.dll" />
     <Content Include="lib\VisualPlus.dll" />
-    <Content Include="Ninja.ico" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Error.cs">

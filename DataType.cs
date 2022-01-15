@@ -8,8 +8,6 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
-    using System.Threading;
 
     /// <summary>
     /// Defines the DataType
@@ -46,7 +44,7 @@ namespace BudgetExecution
         Decimal,
 
         /// <summary>
-        /// Defines the DateTime
+        /// Defines the IsDateTime
         /// </summary>
         DateTime,
 

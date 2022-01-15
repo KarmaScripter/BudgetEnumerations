@@ -1,4 +1,4 @@
-﻿// <copyright file = "EventDate.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "IsEventDate.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
@@ -8,9 +8,7 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
     using System.Diagnostics.CodeAnalysis;
-    using System.Threading;
 
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
     public enum EventDate
