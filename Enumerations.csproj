@@ -143,12 +143,6 @@
     <Content Include="lib\VisualPlus.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnumerationError.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EnumerationError.Designer.cs">
-      <DependentUpon>EnumerationError.cs</DependentUpon>
-    </Compile>
     <Compile Include="FederalHoliday.cs" />
     <Compile Include="IconResource.cs" />
     <Compile Include="FundAvailability.cs" />
@@ -183,11 +177,6 @@
     <Compile Include="Tool.cs" />
     <Compile Include="TransferType.cs" />
     <Compile Include="UI.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EnumerationError.resx">
-      <DependentUpon>EnumerationError.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

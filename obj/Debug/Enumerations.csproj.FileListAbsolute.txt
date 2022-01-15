@@ -17,9 +17,6 @@ C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\Syncfusion.Tools.Window
 C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\Syncfusion.Grid.Base.xml
 C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\Syncfusion.Grid.Windows.xml
 C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\Syncfusion.Shared.Windows.xml
-C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.AssemblyReference.cache
-C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetExecution.EnumerationError.resources
-C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.GenerateResource.cache
 C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.CoreCompileInputs.cache
 C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.CopyComplete
 C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.dll
