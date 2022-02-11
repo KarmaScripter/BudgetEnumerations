@@ -1,25 +1,14 @@
-﻿// <copyright file = "Source.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "ImageSource.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
 namespace BudgetExecution
 {
-    // ********************************************************************************************************************************
-    // *********************************************************  ASSEMBLIES   ********************************************************
-    // ********************************************************************************************************************************
-
-    using System.Threading;
-    using System;
-
     /// <summary>
-    /// Identifies the Source
+    /// 
     /// </summary>
     public enum Source
     {
-        // ******************************************************************************************************************************
-        // ******************************************************   MEMBERS   ***********************************************************
-        // ******************************************************************************************************************************
-
         /// <summary>
         /// The ns
         /// </summary>
@@ -29,116 +18,166 @@ namespace BudgetExecution
         /// The accounting events
         /// </summary>
         AccountingEvents,
-
+        
         /// <summary>
-        /// Identifies the Appropriations
+        /// The appropriations
         /// </summary>
         Appropriations,
 
         /// <summary>
-        /// Identifies the Activity
+        /// The activity
         /// </summary>
-        Activity,
+        ActivityCodes,
 
         /// <summary>
-        /// Identifies the AppropriationBills
+        /// The administrative requests
+        /// </summary>
+        AdministrativeRequests,
+
+        /// <summary>
+        /// The appropriation bills
         /// </summary>
         AppropriationBills,
 
         /// <summary>
-        /// Identifies the ARD
+        /// The appropriation documents
         /// </summary>
-        ARD,
+        AppropriationDocuments,
 
         /// <summary>
-        /// Identifies the AllowanceHolders
+        /// The allowance holders
         /// </summary>
         AllowanceHolders,
 
         /// <summary>
-        /// Identifies the Allocations
+        /// The application tables
+        /// </summary>
+        ApplicationTables,
+
+        /// <summary>
+        /// The apportionments
+        /// </summary>
+        Apportionments,
+
+        /// <summary>
+        /// The allocations
         /// </summary>
         Allocations,
 
         /// <summary>
-        /// Identifies the Accounts
+        /// The accounts
         /// </summary>
         Accounts,
+        
+        /// <summary>
+        /// The budget documents
+        /// </summary>
+        BudgetDocuments,
 
         /// <summary>
-        /// Identifies the Awards
+        /// The budget controls
         /// </summary>
-        Awards,
+        BudgetControls,
 
         /// <summary>
-        /// The balances
+        /// The budget outlays
         /// </summary>
-        Balances,
+        BudgetOutlays,
 
         /// <summary>
-        /// Identifies the BudgetObjectClass
+        /// The budget object classes
         /// </summary>
-        BudgetObjectClass,
+        BudgetObjectClasses,
 
         /// <summary>
-        /// Identifies the ControlNumbers
+        /// The budget resource outlays
         /// </summary>
-        ControlNumbers,
+        BudgetResourceExecution,
 
         /// <summary>
-        /// Identifies the CategoricalGrants
+        /// The carryover balances
         /// </summary>
-        CategoricalGrants,
+        CarryoverBalances,
 
         /// <summary>
-        /// The carry over
+        /// The carryover outlays
         /// </summary>
-        CarryOver,
+        CarryoverOutlays,
 
         /// <summary>
-        /// The commitments
+        /// The carryover estimates
         /// </summary>
-        Commitments,
+        CarryoverEstimates,
 
         /// <summary>
-        /// Identifies the Contracts
+        /// The carryover survey
         /// </summary>
-        Contracts,
+        CarryoverSurvey,
 
         /// <summary>
-        /// Identifies the CleanWaterStateRevolvingFund
+        /// The carryover requests
         /// </summary>
-        CleanWaterStateRevolvingFund,
+        CarryoverRequests,
 
         /// <summary>
-        /// Identifies the DivisionAuthority
+        /// The changes
         /// </summary>
-        DivisionAuthority,
+        Changes,
 
         /// <summary>
-        /// Identifies the DrinkingWaterStateRevolvingFund
+        /// The congressional reprogrammings
         /// </summary>
-        DrinkingWaterStateRevolvingFund,
+        CongressionalReprogrammings,
 
         /// <summary>
-        /// The division execution
+        /// The cost areas
         /// </summary>
-        DivisionExecution,
+        CostAreas,
 
         /// <summary>
-        /// Identifies the Divisions
+        /// The compass levels
         /// </summary>
-        Divisions,
+        CompassLevels,
 
+        /// <summary>
+        /// The cpic
+        /// </summary>
+        CPIC,
+
+        /// <summary>
+        /// The contacts
+        /// </summary>
+        Contacts,
+
+        /// <summary>
+        /// The data rule descriptions
+        /// </summary>
+        DataRuleDescriptions,
+
+        /// <summary>
+        /// The defactos
+        /// </summary>
+        Defactos,
+
+        /// <summary>
+        /// The document control numbers
+        /// </summary>
+        DocumentControlNumbers,
+
+        /// <summary>
+        /// The execution tables
+        /// </summary>
+        ExecutionTables,
+
+        /// <summary>
+        /// The federal holidays
+        /// </summary>
+        FederalHolidays,
+        
         /// <summary>
         /// The deobligations
         /// </summary>
         Deobligations,
-
-        /// <summary>
-        /// Identifies the DeepWaterHorizon
-        /// </summary>
-        DeepWaterHorizon,
 
         /// <summary>
         /// The documents
@@ -146,179 +185,94 @@ namespace BudgetExecution
         Documents,
 
         /// <summary>
-        /// Identifies the EJ
-        /// </summary>
-        EJ,
-
-        /// <summary>
-        /// Identifies the Employees
-        /// </summary>
-        Employees,
-
-        /// <summary>
-        /// Identifies the Expenses
-        /// </summary>
-        Expenses,
-
-        /// <summary>
-        /// Identifies the External
+        /// The external
         /// </summary>
         External,
 
         /// <summary>
-        /// Identifies the ECAD
-        /// </summary>
-        ECAD,
-
-        /// <summary>
-        /// Identifies the EPM
-        /// </summary>
-        EPM,
-
-        /// <summary>
-        /// Identifies the ExternalTransfers
-        /// </summary>
-        ExternalTransfers,
-
-        /// <summary>
-        /// The expenditures
-        /// </summary>
-        Expenditures,
-
-        /// <summary>
-        /// Identifies the Funds
+        /// The funds
         /// </summary>
         Funds,
 
         /// <summary>
-        /// Identifies the FullTimeEquivalent
+        /// The full time equivalents
         /// </summary>
-        FTE,
+        FullTimeEquivalents,
 
         /// <summary>
-        /// Identifies the FiscalYears
+        /// The fiscal years
         /// </summary>
         FiscalYears,
 
         /// <summary>
-        /// Identifies the FinanceObjectClass
+        /// The finance object class
         /// </summary>
-        FinanceObjectClass,
+        FinanceObjectClasses,
 
         /// <summary>
-        /// Identifies the FullTimeUtilization Table
+        /// The growth rates
         /// </summary>
-        FullTimeUtilization,
+        GrowthRates,
 
         /// <summary>
-        /// Identifies the Grants
+        /// The gs pay scale
         /// </summary>
-        Grants,
+        GsPayScale,
 
         /// <summary>
-        /// Identifies the Goals
+        /// The headquarters authority
+        /// </summary>
+        HeadquartersAuthority,
+
+        /// <summary>
+        /// The images
+        /// </summary>
+        Images,
+
+        /// <summary>
+        /// The messages
+        /// </summary>
+        Messages,
+
+        /// <summary>
+        /// The goals
         /// </summary>
         Goals,
 
         /// <summary>
-        /// The human resource data
-        /// </summary>
-        HumanResourceData,
-
-        /// <summary>
-        /// Identifies the HumanResourceOrganizations
+        /// The human resource organizations
         /// </summary>
         HumanResourceOrganizations,
 
         /// <summary>
-        /// Identifies the TIM
+        /// The information technology
         /// </summary>
         InformationTechnology,
-
+        
         /// <summary>
-        /// Identifies the InternalTransfers
+        /// The regional authority
         /// </summary>
-        InternalTransfers,
+        RegionalAuthority,
 
         /// <summary>
-        /// Identifies the LUST
+        /// The monthly outlays
         /// </summary>
-        LUST,
+        MonthlyOutlays,
 
         /// <summary>
-        /// Identifies the LCARD
-        /// </summary>
-        LCARD,
-
-        /// <summary>
-        /// Identifies the LSASD
-        /// </summary>
-        LSASD,
-
-        /// <summary>
-        /// Identifies the LeaveProjections
-        /// </summary>
-        LeaveProjections,
-
-        /// <summary>
-        /// Identifies the LustSupplemental
-        /// </summary>
-        LustSupplemental,
-
-        /// <summary>
-        /// Identifies the MDR
-        /// </summary>
-        MSR,
-
-        /// <summary>
-        /// Identifies the MSD
-        /// </summary>
-        MSD,
-
-        /// <summary>
-        /// Creates new obligationalauthority.
-        /// </summary>
-        NewObligationalAuthority,
-
-        /// <summary>
-        /// Identifies the NationalPrograms
+        /// The national programs
         /// </summary>
         NationalPrograms,
 
         /// <summary>
-        /// Identifies the NonSiteTravel
-        /// </summary>
-        NonSiteTravel,
-
-        /// <summary>
-        /// Identifies the OilSpill
-        /// </summary>
-        OilSpill,
-
-        /// <summary>
-        /// Identifies the ORC
-        /// </summary>
-        ORC,
-
-        /// <summary>
-        /// Identifies the ORA
-        /// </summary>
-        ORA,
-
-        /// <summary>
-        /// Identifies the Objectives
+        /// The objectives
         /// </summary>
         Objectives,
 
         /// <summary>
-        /// Identifies the Organizations
+        /// The organizations
         /// </summary>
         Organizations,
-
-        /// <summary>
-        /// Identifies the Outlays
-        /// </summary>
-        Outlays,
 
         /// <summary>
         /// The obligations
@@ -326,213 +280,208 @@ namespace BudgetExecution
         Obligations,
 
         /// <summary>
-        /// The open commitments
+        /// The object class outlays
         /// </summary>
-        OpenCommitments,
+        ObjectClassOutlays,
 
         /// <summary>
-        /// Identifies the Overtime
+        /// The operating plans
         /// </summary>
-        Overtime,
+        OperatingPlans,
 
         /// <summary>
-        /// Identifies the PayrollObligations
+        /// The payroll activity
         /// </summary>
-        PayrollObligations,
+        PayrollActivity,
 
         /// <summary>
-        /// Identifies the ProgramAreas
+        /// The program areas
         /// </summary>
         ProgramAreas,
 
         /// <summary>
-        /// Identifies the Payroll
+        /// The payroll authority
         /// </summary>
-        Payroll,
+        PayrollAuthority,
 
         /// <summary>
-        /// The payroll hours
+        /// The payroll cost codes
         /// </summary>
-        PayrollHours,
+        PayrollCostCodes,
 
         /// <summary>
-        /// The procurements
+        /// The payroll requests
         /// </summary>
-        Procurements,
+        PayrollRequests,
 
         /// <summary>
-        /// The payments
+        /// The project cost codes
         /// </summary>
-        Payments,
+        ProjectCostCodes,
 
         /// <summary>
-        /// The purchase activity
-        /// </summary>
-        PurchaseActivity,
-
-        /// <summary>
-        /// Identifies the ProgramResultsCode
-        /// </summary>
-        PRC,
-
-        /// <summary>
-        /// Identifies the ProgramProjects
+        /// The program projects
         /// </summary>
         ProgramProjects,
 
         /// <summary>
-        /// Identifies the Programs
+        /// The program descriptions
         /// </summary>
-        Programs,
+        ProgramDescriptions,
 
         /// <summary>
-        /// Identifies the Purchases
+        /// The projects
         /// </summary>
-        Purchases,
+        Projects,
 
         /// <summary>
-        /// Identifies the Reimbursables
+        /// The providers
         /// </summary>
-        Reimbursables,
+        Providers,
+
+        /// <summary>
+        /// The pay periods
+        /// </summary>
+        PayPeriods,
+
+        /// <summary>
+        /// The program finance schedule
+        /// </summary>
+        ProgramFinancingSchedule,
+
+        /// <summary>
+        /// The query definitions
+        /// </summary>
+        QueryDefinitions,
+
+        /// <summary>
+        /// The reimbursable funds
+        /// </summary>
+        ReimbursableFunds,
+
+        /// <summary>
+        /// The reimbursable agreements
+        /// </summary>
+        ReimbursableAgreements,
+
+        /// <summary>
+        /// The reimbursable survey
+        /// </summary>
+        ReimbursableSurvey,
+
+        /// <summary>
+        /// The reports
+        /// </summary>
+        Reports,
 
         /// <summary>
         /// The requisitions
         /// </summary>
-        Requisitions,
+        ReferenceTables,
 
         /// <summary>
-        /// Identifies the ResourcePlanningOffices
+        /// The resource planning offices
         /// </summary>
         ResourcePlanningOffices,
 
         /// <summary>
-        /// Identifies the ResponsibilityCenters
+        /// The responsibility centers
         /// </summary>
         ResponsibilityCenters,
 
         /// <summary>
-        /// Identifies the Reprogrammings
+        /// The reprogrammings
         /// </summary>
         Reprogrammings,
-
+        
         /// <summary>
-        /// Identifies the RegionAuthority
+        /// The schema types
         /// </summary>
-        RegionAuthority,
+        SchemaTypes,
 
         /// <summary>
-        /// Identifies the STAG
+        /// The status of appropriations
         /// </summary>
-        STAG,
+        StatusOfAppropriations,
 
         /// <summary>
-        /// Identifies the SF6A
+        /// The status of funds
         /// </summary>
-        SF6A,
+        StatusOfFunds,
 
         /// <summary>
-        /// Identifies the Sites
+        /// The status of supplemental funing
         /// </summary>
-        Sites,
+        StatusOfSupplementalFuning,
 
         /// <summary>
-        /// Identifies the Superfund
+        /// The status of jobs act funding
         /// </summary>
-        Superfund,
+        StatusOfJobsActFunding,
 
         /// <summary>
-        /// Identifies the SpecialAccounts
+        /// The spending rates
+        /// </summary>
+        SpendingRates,
+
+        /// <summary>
+        /// The s F133
+        /// </summary>
+        SF133,
+
+        /// <summary>
+        /// The state organizations
+        /// </summary>
+        StateOrganizations,
+
+        /// <summary>
+        /// The state grant obligations
+        /// </summary>
+        StateGrantObligations,
+
+        /// <summary>
+        /// The site activity
+        /// </summary>
+        SiteActivity,
+
+        /// <summary>
+        /// The site project codes
+        /// </summary>
+        SiteProjectCodes,
+
+        /// <summary>
+        /// The superfund sites
+        /// </summary>
+        SuperfundSites,
+
+        /// <summary>
+        /// The special accounts
         /// </summary>
         SpecialAccounts,
-
+        
         /// <summary>
-        /// Identifies the SuperfundSupplemental
-        /// </summary>
-        SuperfundSupplemental,
-
-        /// <summary>
-        /// Identifies the SpecialProjectsAndEarmarks
-        /// </summary>
-        SpecialProjects,
-
-        /// <summary>
-        /// Identifies the SiteTravel
-        /// </summary>
-        SiteTravel,
-
-        /// <summary>
-        /// Identifies the SEMD
-        /// </summary>
-        SEMD,
-
-        /// <summary>
-        /// Identifies the Supplemental
-        /// </summary>
-        Supplemental,
-
-        /// <summary>
-        /// Identifies the Transfers
+        /// The transfers
         /// </summary>
         Transfers,
 
         /// <summary>
-        /// Identifies the TravelObligations
+        /// The trans types
         /// </summary>
-        TravelObligations,
+        TransTypes,
 
         /// <summary>
-        /// Identifies the TimeOff
+        /// The travel activity
         /// </summary>
-        TimeOff,
-
+        TravelActivity,
+        
         /// <summary>
-        /// Identifies the Travel
-        /// </summary>
-        Travel,
-
-        /// <summary>
-        /// Identifies the Utilization
-        /// </summary>
-        Utilization,
-
-        /// <summary>
-        /// The unliquidated obligations
-        /// </summary>
-        ULO,
-
-        /// <summary>
-        /// The vendors
-        /// </summary>
-        Vendors,
-
-        /// <summary>
-        /// Identifies the WD
-        /// </summary>
-        WD,
-
-        /// <summary>
-        /// Identifies the WSA
-        /// </summary>
-        WSA,
-
-        /// <summary>
-        /// Identifies the WCF
-        /// </summary>
-        WCF,
-
-        /// <summary>
-        /// Identifies the WorkforceData
-        /// </summary>
-        WorkforceData,
-
-        /// <summary>
-        /// Identifies the WorkCodes
+        /// The work codes
         /// </summary>
         WorkCodes,
 
         /// <summary>
-        /// Identifies the XA
+        /// The unobligated authority
         /// </summary>
-        XA
+        UnobligatedAuthority
     }
 }

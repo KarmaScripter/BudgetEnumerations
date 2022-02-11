@@ -8,8 +8,6 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System;
-    using System.Threading;
 
     /// <summary>
     /// Defines the Fiscal Year Availability of Appropriated Funds

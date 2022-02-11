@@ -8,8 +8,6 @@ namespace BudgetExecution
     // *********************************************************  ASSEMBLIES   ********************************************************
     // ********************************************************************************************************************************
 
-    using System.Threading;
-    using System;
 
     /// <summary>
     /// Defines the BOC
@@ -61,7 +59,7 @@ namespace BudgetExecution
         WCF = 38,
 
         /// <summary>
-        /// Defines the Grants
+        /// Defines the HeadquartersAuthority
         /// </summary>
         Grants = 41
     }

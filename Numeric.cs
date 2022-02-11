@@ -4,17 +4,6 @@
 
 namespace BudgetExecution
 {
-    // ********************************************************************************************************************************
-    // *********************************************************  ASSEMBLIES   ********************************************************
-    // ********************************************************************************************************************************
-
-    using System.Threading;
-    using System;
-
-    // ******************************************************************************************************************************
-    // ******************************************************  MEMEBERS      ********************************************************
-    // ******************************************************************************************************************************
-
     /// <summary>
     /// 
     /// </summary>
@@ -29,10 +18,6 @@ namespace BudgetExecution
         /// The identifier
         /// </summary>
         Id,
-
-        // *************************************************************
-        // **************    LEAVE PROJECTION  FIELDS ******************
-        // *************************************************************
 
         /// <summary>
         /// The year to date earned
@@ -125,7 +110,7 @@ namespace BudgetExecution
         /// <summary>
         /// The unliquidated obligations
         /// </summary>
-        UnliquidatedObligations,
+        ULO,
 
         /// <summary>
         /// The deobligations
@@ -141,12 +126,7 @@ namespace BudgetExecution
         /// The open commitments
         /// </summary>
         OpenCommitments,
-
-        /// <summary>
-        /// The ulo
-        /// </summary>
-        ULO,
-
+        
         /// <summary>
         /// The expenditures
         /// </summary>
@@ -193,33 +173,33 @@ namespace BudgetExecution
         Available,
 
         //************************************************************* */
-        //**************  PAYROLL OBLIGATION FIELDS  ****************** */
+        //**************  PAYROLL ACTIVITY NUMERIC FIELDS  ************ */
         //************************************************************* */
 
         /// <summary>
         /// The annual overtime paid
         /// </summary>
-        AnnualOvertimePaid,
+        Benefits,
 
         /// <summary>
         /// The annual base paid
         /// </summary>
-        AnnualBasePaid,
+        BasePaid,
 
         /// <summary>
         /// The annual other hours
         /// </summary>
-        AnnualOtherHours,
+        BaseHours,
 
         /// <summary>
         /// The allocation percentage
         /// </summary>
-        AllocationPercentage,
+        OvertimePaid,
 
         /// <summary>
         /// The compensation rate
         /// </summary>
-        CompensationRate,
+        OvertimeHours,
 
         //************************************************************************************ */
         //*******************              Procurements             ************************** */
@@ -231,7 +211,7 @@ namespace BudgetExecution
         Ordered,
 
         //************************************************************************************ */
-        //*******************              Requisitions             ************************** */
+        //*******************              ReferenceTables             ************************** */
         //************************************************************************************ */   
 
         /// <summary>
@@ -254,18 +234,9 @@ namespace BudgetExecution
         /// </summary>
         Reversed,
 
-        //************************************************************************************ */
-        //*******************              Payments              **************************** */
-        //************************************************************************************ */
-
-        /// <summary>
-        /// The payment
-        /// </summary>
-        Payment,
-
         /// <summary>
         /// The disbursed
         /// </summary>
-        Disbursed
+        Disbursements
     }
 }
