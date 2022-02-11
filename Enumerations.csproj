@@ -41,35 +41,7 @@
     </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Syncfusion.Licensing, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BudgetStatic\lib\Syncfusion.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Base, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BudgetStatic\lib\Syncfusion.Shared.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Tools.Base, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BudgetStatic\lib\Syncfusion.Tools.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Tools.Windows, Version=19.3460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BudgetStatic\lib\Syncfusion.Tools.Windows.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.Linq" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="VisualPlus, Version=0.4.1.7, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BudgetStatic\lib\VisualPlus.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
@@ -77,7 +49,6 @@
     <None Include="lib\MetroSet UI.dll.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="lib\BudgetStatic.dll" />
     <Content Include="lib\CharmNotification.dll" />
@@ -142,15 +113,8 @@
     <Content Include="lib\Syncfusion.XlsIO.Base.xml" />
     <Content Include="lib\System.Data.SqlServerCe.dll" />
     <Content Include="lib\VisualPlus.dll" />
-    <Content Include="Ninja.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Error.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Error.Designer.cs">
-      <DependentUpon>Error.cs</DependentUpon>
-    </Compile>
     <Compile Include="FederalHoliday.cs" />
     <Compile Include="IconResource.cs" />
     <Compile Include="FundAvailability.cs" />
@@ -161,12 +125,6 @@
     <Compile Include="DataType.cs" />
     <Compile Include="EventDate.cs" />
     <Compile Include="Document.cs" />
-    <Compile Include="Message.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Message.designer.cs">
-      <DependentUpon>Message.cs</DependentUpon>
-    </Compile>
     <Compile Include="OutlayType.cs" />
     <Compile Include="EXT.cs" />
     <Compile Include="Field.cs" />
@@ -191,14 +149,6 @@
     <Compile Include="Tool.cs" />
     <Compile Include="TransferType.cs" />
     <Compile Include="UI.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Error.resx">
-      <DependentUpon>Error.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Message.resx">
-      <DependentUpon>Message.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
