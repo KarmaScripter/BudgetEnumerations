@@ -31,3 +31,4 @@ C:\Users\teppler\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.C
 C:\Users\teppler\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.CopyComplete
 C:\Users\teppler\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.dll
 C:\Users\teppler\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.pdb
+C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.dll.config
