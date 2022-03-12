@@ -1,9 +1,3 @@
-C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.dll
-C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.pdb
-C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.CoreCompileInputs.cache
-C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.dll
-C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.pdb
-C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.AssemblyReference.cache
 C:\Users\teppler\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.dll.config
 C:\Users\teppler\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.dll
 C:\Users\teppler\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.pdb
@@ -32,3 +26,9 @@ C:\Users\teppler\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.C
 C:\Users\teppler\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.dll
 C:\Users\teppler\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.pdb
 C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.dll.config
+C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.dll
+C:\Users\terry\source\repos\BudgetEnumerations\bin\Debug\BudgetEnumerations.pdb
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.AssemblyReference.cache
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\Enumerations.csproj.CoreCompileInputs.cache
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.dll
+C:\Users\terry\source\repos\BudgetEnumerations\obj\Debug\BudgetEnumerations.pdb

@@ -115,7 +115,10 @@
     <Content Include="lib\VisualPlus.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataPath.cs" />
+    <Compile Include="ExpenseType.cs" />
     <Compile Include="FederalHoliday.cs" />
+    <Compile Include="Guidance.cs" />
     <Compile Include="IconResource.cs" />
     <Compile Include="FundAvailability.cs" />
     <Compile Include="AwardType.cs" />
@@ -125,6 +128,7 @@
     <Compile Include="DataType.cs" />
     <Compile Include="EventDate.cs" />
     <Compile Include="Document.cs" />
+    <Compile Include="ImageDirectory.cs" />
     <Compile Include="OutlayType.cs" />
     <Compile Include="EXT.cs" />
     <Compile Include="Field.cs" />
@@ -137,6 +141,7 @@
     <Compile Include="Net.cs" />
     <Compile Include="NPM.cs" />
     <Compile Include="Numeric.cs" />
+    <Compile Include="PicSize.cs" />
     <Compile Include="PrimaryKey.cs" />
     <Compile Include="Provider.cs" />
     <Compile Include="RC.cs" />
@@ -144,6 +149,7 @@
     <Compile Include="Source.cs" />
     <Compile Include="SQL.cs" />
     <Compile Include="STAT.cs" />
+    <Compile Include="ToolType.cs" />
     <Compile Include="TransferType.cs" />
     <Compile Include="UI.cs" />
   </ItemGroup>
