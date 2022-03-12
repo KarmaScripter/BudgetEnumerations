@@ -132,8 +132,6 @@
     <Compile Include="FundCode.cs" />
     <Compile Include="Holiday.cs" />
     <Compile Include="ImageFormat.cs" />
-    <Compile Include="ImageSizer.cs" />
-    <Compile Include="ImageSource.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="Logic.cs" />
     <Compile Include="Net.cs" />
@@ -146,7 +144,6 @@
     <Compile Include="Source.cs" />
     <Compile Include="SQL.cs" />
     <Compile Include="STAT.cs" />
-    <Compile Include="Tool.cs" />
     <Compile Include="TransferType.cs" />
     <Compile Include="UI.cs" />
   </ItemGroup>

@@ -1,13 +1,13 @@
-﻿// <copyright file = "ImageFormat.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "OutlayType.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
 namespace BudgetExecution
 {
     /// <summary>
-    /// Defines the Enum
+    /// Defines the OutlayType
     /// </summary>
-    public enum ImageFormat
+    public enum ExpenseType
     {
         /// <summary>
         /// Defines the None
@@ -15,38 +15,38 @@ namespace BudgetExecution
         NS = 0,
 
         /// <summary>
-        /// The PNG
+        /// Defines the Commitment
         /// </summary>
-        PNG,
+        Commitment,
 
         /// <summary>
-        /// The JPEG
+        /// Defines the OpenCommitment
         /// </summary>
-        JPEG,
+        OpenCommitment,
 
         /// <summary>
-        /// The BMP
+        /// Defines the Obligation
         /// </summary>
-        BMP,
+        Obligation,
 
         /// <summary>
-        /// The icon
+        /// Defines the ULO
         /// </summary>
-        ICO,
+        ULO,
 
         /// <summary>
-        /// The GIF
+        /// The de-obligation
         /// </summary>
-        GIF,
+        Deobligation,
 
         /// <summary>
-        /// The tiff
+        /// Defines the Expenditure
         /// </summary>
-        TIFF,
+        Expenditure,
 
         /// <summary>
-        /// The SVG
+        /// Defines the All
         /// </summary>
-        SVG
+        All
     }
 }

@@ -1,37 +1,36 @@
-﻿// <copyright file = "Document.cs" company = "Terry D. Eppler">
+﻿// <copyright file = "PicSize.cs" company = "Terry D. Eppler">
 // Copyright (c) Terry D. Eppler. All rights reserved.
 // </copyright>
 
 namespace BudgetExecution
 {
     /// <summary>
-    /// Defines the Report
     /// </summary>
-    public enum Document
+    public enum PicSize
     {
         /// <summary>
-        /// Defines the None
+        /// The none
         /// </summary>
         NS = 0,
 
         /// <summary>
-        /// Defines the Internal
+        /// The small
         /// </summary>
-        Budget = 1,
+        Small,
 
         /// <summary>
-        /// Defines the External
+        /// The medium
         /// </summary>
-        External = 2,
+        Medium,
 
         /// <summary>
-        /// Defines the Budget
+        /// The large
         /// </summary>
-        Report = 3,
+        Large,
 
         /// <summary>
-        /// Defines the Analysis
+        /// The huge
         /// </summary>
-        Analysis = 4
+        Huge
     }
 }
