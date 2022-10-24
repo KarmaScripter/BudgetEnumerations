@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>BudgetExecution</RootNamespace>
     <AssemblyName>BudgetEnumerations</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -37,8 +37,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>ninja.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,73 +45,11 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="App.config" />
-    <None Include="lib\MetroSet UI.dll.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="lib\BudgetStatic.dll" />
-    <Content Include="lib\CharmNotification.dll" />
-    <Content Include="lib\DataGridViewExtension.dll" />
-    <Content Include="lib\EPPlus.dll" />
-    <Content Include="lib\EPPlus.XML" />
-    <Content Include="lib\Expander.dll" />
-    <Content Include="lib\LinqStatistics.dll" />
-    <Content Include="lib\MetroSet UI.dll" />
-    <Content Include="lib\SQLite.Designer.dll" />
-    <Content Include="lib\SQLite.Designer.xml" />
-    <Content Include="lib\Syncfusion.Calculate.Base.dll" />
-    <Content Include="lib\Syncfusion.Calculate.Base.xml" />
-    <Content Include="lib\Syncfusion.Calculate.Windows.dll" />
-    <Content Include="lib\Syncfusion.Calculate.Windows.xml" />
-    <Content Include="lib\Syncfusion.Chart.Base.dll" />
-    <Content Include="lib\Syncfusion.Chart.Base.xml" />
-    <Content Include="lib\Syncfusion.Chart.Windows.dll" />
-    <Content Include="lib\Syncfusion.Chart.Windows.xml" />
-    <Content Include="lib\Syncfusion.Compression.Base.dll" />
-    <Content Include="lib\Syncfusion.Compression.Base.xml" />
-    <Content Include="lib\Syncfusion.Data.WinForms.dll" />
-    <Content Include="lib\Syncfusion.Data.WinForms.xml" />
-    <Content Include="lib\Syncfusion.DataSource.WinForms.dll" />
-    <Content Include="lib\Syncfusion.DataSource.WinForms.xml" />
-    <Content Include="lib\Syncfusion.Grid.Base.dll" />
-    <Content Include="lib\Syncfusion.Grid.Base.xml" />
-    <Content Include="lib\Syncfusion.Grid.Windows.dll" />
-    <Content Include="lib\Syncfusion.Grid.Windows.xml" />
-    <Content Include="lib\Syncfusion.Licensing.dll" />
-    <Content Include="lib\Syncfusion.Office2016Theme.WinForms.dll" />
-    <Content Include="lib\Syncfusion.Office2016Theme.WinForms.xml" />
-    <Content Include="lib\Syncfusion.Office2019Theme.WinForms.dll" />
-    <Content Include="lib\Syncfusion.Office2019Theme.WinForms.xml" />
-    <Content Include="lib\Syncfusion.Pdf.Base.dll" />
-    <Content Include="lib\Syncfusion.Pdf.Base.xml" />
-    <Content Include="lib\Syncfusion.Pdf.Windows.dll" />
-    <Content Include="lib\Syncfusion.Pdf.Windows.xml" />
-    <Content Include="lib\Syncfusion.PdfViewer.Windows.dll" />
-    <Content Include="lib\Syncfusion.PdfViewer.Windows.xml" />
-    <Content Include="lib\Syncfusion.PivotAnalysis.Base.dll" />
-    <Content Include="lib\Syncfusion.PivotAnalysis.Base.xml" />
-    <Content Include="lib\Syncfusion.PivotAnalysis.Windows.dll" />
-    <Content Include="lib\Syncfusion.PivotAnalysis.Windows.xml" />
-    <Content Include="lib\Syncfusion.PivotChart.Windows.dll" />
-    <Content Include="lib\Syncfusion.PivotChart.Windows.xml" />
-    <Content Include="lib\Syncfusion.PivotConverter.Windows.dll" />
-    <Content Include="lib\Syncfusion.PivotConverter.Windows.xml" />
-    <Content Include="lib\Syncfusion.Shared.Base.dll" />
-    <Content Include="lib\Syncfusion.Shared.Base.xml" />
-    <Content Include="lib\Syncfusion.Shared.Windows.dll" />
-    <Content Include="lib\Syncfusion.Shared.Windows.xml" />
-    <Content Include="lib\Syncfusion.Spreadsheet.Windows.dll" />
-    <Content Include="lib\Syncfusion.Spreadsheet.Windows.xml" />
-    <Content Include="lib\Syncfusion.SpreadsheetHelper.Windows.dll" />
-    <Content Include="lib\Syncfusion.SpreadsheetHelper.Windows.xml" />
-    <Content Include="lib\Syncfusion.Tools.Base.dll" />
-    <Content Include="lib\Syncfusion.Tools.Base.xml" />
-    <Content Include="lib\Syncfusion.Tools.Windows.dll" />
-    <Content Include="lib\Syncfusion.Tools.Windows.xml" />
-    <Content Include="lib\Syncfusion.XlsIO.Base.dll" />
-    <Content Include="lib\Syncfusion.XlsIO.Base.xml" />
-    <Content Include="lib\System.Data.SqlServerCe.dll" />
-    <Content Include="lib\VisualPlus.dll" />
+    <Content Include="etc\ninja.ico" />
+    <Content Include="ninja.ico" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataPath.cs" />
@@ -153,5 +90,6 @@
     <Compile Include="TransferType.cs" />
     <Compile Include="UI.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
