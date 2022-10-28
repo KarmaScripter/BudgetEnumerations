@@ -135,6 +135,11 @@ namespace BudgetExecution
         CongressionalReprogrammings,
 
         /// <summary>
+        /// The carryover apportionments
+        /// </summary>
+        CarryoverApportionments,
+
+        /// <summary>
         /// The cost areas
         /// </summary>
         CostAreas,
