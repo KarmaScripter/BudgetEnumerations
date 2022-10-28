@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>ninja.ico</ApplicationIcon>
+    <SupportedOSPlatformVersion>10.0.22621.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include=".vs\ProjectSettings.json" />
+    <Content Include=".vs\VSWorkspaceState.json" />
+    <Content Include="ninja.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-17a0436086aa4ff74cac5ae76dc04349745b5404.idx" />
+    <None Include=".git\objects\pack\pack-17a0436086aa4ff74cac5ae76dc04349745b5404.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\BudgetEnumerations\FileContentIndex\0738a83e-162d-4f96-a50e-812b235df05b.vsidx" />
+    <None Include=".vs\BudgetEnumerations\FileContentIndex\692410b4-1dbd-477b-8296-f7e87d022c33.vsidx" />
+    <None Include=".vs\BudgetEnumerations\FileContentIndex\79a90307-bd2e-4024-960f-36087ad53a92.vsidx" />
+    <None Include=".vs\BudgetEnumerations\FileContentIndex\b665d543-2db5-4f9c-a031-b6ef2219ab86.vsidx" />
+    <None Include=".vs\BudgetEnumerations\FileContentIndex\read.lock" />
+    <None Include=".vs\BudgetEnumerations\v16\.suo" />
+    <None Include=".vs\slnx.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\BudgetEnumerations\FileContentIndex\merges\" />
+    <Folder Include=".vs\BudgetEnumerations\v17\" />
+  </ItemGroup>
+
+</Project>

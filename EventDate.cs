@@ -4,9 +4,9 @@
 
 namespace BudgetExecution
 {
-    using System.Diagnostics.CodeAnalysis;
-
-    [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
+    /// <summary>
+    /// 
+    /// </summary>
     public enum EventDate
     {
         /// <summary>
