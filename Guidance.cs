@@ -1,6 +1,6 @@
-﻿// // <copyright file = "Guidance.cs" company = "Terry D. Eppler">
-// // Copyright (c) Terry D. Eppler. All rights reserved.
-// // </copyright>
+﻿// <copyright file = "Guidance.cs" company = "Terry D. Eppler">
+// Copyright (c) Terry D. Eppler. All rights reserved.
+// </copyright>
 //
 
 namespace BudgetExecution
@@ -31,7 +31,7 @@ namespace BudgetExecution
         /// <summary>
         /// The omb a11
         /// </summary>
-        OMBA11,
+        A11,
 
         /// <summary>
         /// The official travel
