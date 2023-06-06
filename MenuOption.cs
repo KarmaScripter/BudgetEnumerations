@@ -6,7 +6,7 @@
 //     Last Modified By:        Terry D. Eppler
 //     Last Modified On:        06-06-2023
 // ******************************************************************************************
-// <copyright file="ExpenseType.cs" company="Terry D. Eppler">
+// <copyright file="MenuOption.cs" company="Terry D. Eppler">
 //    This is a Federal Budget, Finance, and Accounting application for the
 //    US Environmental Protection Agency (US EPA).
 //    Copyright ©  2023  Terry Eppler
@@ -34,7 +34,7 @@
 //    You can contact me at:   terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
-//   ExpenseType.cs
+//   MenuOption.cs
 // </summary>
 // ******************************************************************************************
 
@@ -43,31 +43,34 @@ namespace BudgetExecution
     using System;
     using System.Threading;
 
-    /// <summary> Defines the OutlayType </summary>
-    public enum ExpenseType
+    /// <summary> </summary>
+    public enum MenuOption
     {
-        /// <summary> Defines the None </summary>
+        /// <summary> The ns </summary>
         NS = 0,
 
-        /// <summary> Defines the Commitment </summary>
-        Commitment,
+        /// <summary> The file </summary>
+        File = 1,
 
-        /// <summary> Defines the OpenCommitment </summary>
-        OpenCommitment,
+        /// <summary> The folder </summary>
+        Folder = 2,
 
-        /// <summary> Defines the Obligation </summary>
-        Obligation,
+        /// <summary> The calculator </summary>
+        Calculator = 3,
 
-        /// <summary> Defines the ULO </summary>
-        ULO,
+        /// <summary> The calendar </summary>
+        Calendar = 4,
 
-        /// <summary> The de-obligation </summary>
-        Deobligation,
+        /// <summary> The guidance </summary>
+        Guidance = 5,
 
-        /// <summary> Defines the Expenditure </summary>
-        Expenditure,
+        /// <summary> The save </summary>
+        Save = 6,
 
-        /// <summary> Defines the All </summary>
-        All
+        /// <summary> The close </summary>
+        Close = 7,
+
+        /// <summary> The exit </summary>
+        Exit = 8
     }
 }

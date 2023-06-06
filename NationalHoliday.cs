@@ -6,7 +6,7 @@
 //     Last Modified By:        Terry D. Eppler
 //     Last Modified On:        06-06-2023
 // ******************************************************************************************
-// <copyright file="ExpenseType.cs" company="Terry D. Eppler">
+// <copyright file="NationalHoliday.cs" company="Terry D. Eppler">
 //    This is a Federal Budget, Finance, and Accounting application for the
 //    US Environmental Protection Agency (US EPA).
 //    Copyright ©  2023  Terry Eppler
@@ -34,7 +34,7 @@
 //    You can contact me at:   terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
-//   ExpenseType.cs
+//   NationalHoliday.cs
 // </summary>
 // ******************************************************************************************
 
@@ -43,31 +43,42 @@ namespace BudgetExecution
     using System;
     using System.Threading;
 
-    /// <summary> Defines the OutlayType </summary>
-    public enum ExpenseType
+    /// <summary> </summary>
+    public enum NationalHoliday
     {
-        /// <summary> Defines the None </summary>
-        NS = 0,
+        /// <summary> New Year’s Day, January 1. </summary>
+        NewYearsDay,
 
-        /// <summary> Defines the Commitment </summary>
-        Commitment,
+        /// <summary>
+        /// Birthday of Martin Luther King, Jr., the third Monday in January.
+        /// </summary>
+        MartinLutherKingDay,
 
-        /// <summary> Defines the OpenCommitment </summary>
-        OpenCommitment,
+        /// <summary> Washington’s Birthday, the third Monday in February. </summary>
+        WashingtonsDay,
 
-        /// <summary> Defines the Obligation </summary>
-        Obligation,
+        /// <summary> Memorial Day, the last Monday in May. </summary>
+        MemorialDay,
 
-        /// <summary> Defines the ULO </summary>
-        ULO,
+        /// <summary> Juneteenth National Independence Day, June 19. </summary>
+        JuneteenthDay,
 
-        /// <summary> The de-obligation </summary>
-        Deobligation,
+        /// <summary> Independence Day, July 4. </summary>
+        IndependenceDay,
 
-        /// <summary> Defines the Expenditure </summary>
-        Expenditure,
+        /// <summary> Veterans Day, November 11. </summary>
+        VeteransDay,
 
-        /// <summary> Defines the All </summary>
-        All
+        /// <summary> Labor Day, the first Monday in September. </summary>
+        LaborDay,
+
+        /// <summary> Columbus Day, the second Monday in October. </summary>
+        ColumbusDay,
+
+        /// <summary> Thanksgiving Day, the fourth Thursday in November. </summary>
+        ThanksgivingDay,
+
+        /// <summary> Christmas Day, December 25. </summary>
+        ChristmasDay
     }
 }

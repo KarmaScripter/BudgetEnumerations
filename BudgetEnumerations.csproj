@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <ApplicationIcon>ninja.ico</ApplicationIcon>
@@ -13,12 +13,21 @@
     <PackageIcon>BudExNinja.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/KarmaScripter/BudgetEnumerations</RepositoryUrl>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="etc\ninja.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include=".vs\ProjectSettings.json" />
     <Content Include=".vs\VSWorkspaceState.json" />
-    <Content Include="ninja.ico" />
+    <Content Include="etc\ninja.ico" />
   </ItemGroup>
 
   <ItemGroup>

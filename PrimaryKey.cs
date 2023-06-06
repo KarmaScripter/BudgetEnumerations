@@ -1,43 +1,110 @@
-﻿// <copyright file = "PrimaryKey.cs" company = "Terry D. Eppler">
-// Copyright (c) Terry D. Eppler. All rights reserved.
+﻿// ******************************************************************************************
+//     Assembly:                Budget Enumerations
+//     Author:                  Terry D. Eppler
+//     Created:                 06-06-2023
+// 
+//     Last Modified By:        Terry D. Eppler
+//     Last Modified On:        06-06-2023
+// ******************************************************************************************
+// <copyright file="PrimaryKey.cs" company="Terry D. Eppler">
+//    This is a Federal Budget, Finance, and Accounting application for the
+//    US Environmental Protection Agency (US EPA).
+//    Copyright ©  2023  Terry Eppler
+// 
+//    Permission is hereby granted, free of charge, to any person obtaining a copy
+//    of this software and associated documentation files (the “Software”),
+//    to deal in the Software without restriction,
+//    including without limitation the rights to use,
+//    copy, modify, merge, publish, distribute, sublicense,
+//    and/or sell copies of the Software,
+//    and to permit persons to whom the Software is furnished to do so,
+//    subject to the following conditions:
+// 
+//    The above copyright notice and this permission notice shall be included in all
+//    copies or substantial portions of the Software.
+// 
+//    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+//    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+//    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+//    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+//    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+//    DEALINGS IN THE SOFTWARE.
+// 
+//    You can contact me at:   terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
+// <summary>
+//   PrimaryKey.cs
+// </summary>
+// ******************************************************************************************
 
 namespace BudgetExecution
 {
-    /// <summary>
-    /// 
-    /// </summary>
+    using System;
+    using System.Threading;
+
+    /// <summary> </summary>
     public enum PrimaryKey
     {
         /// <summary>
-        /// The PRC identifier
-        /// </summary>
-        AllocationsId,
-        
-        /// <summary>
-        /// The accounting event identifier
+        /// The accounting events identifier
         /// </summary>
         AccountingEventsId,
 
         /// <summary>
-        /// The account identifier
+        /// The accounts identifier
         /// </summary>
         AccountsId,
 
         /// <summary>
-        /// The apportionments identifier
+        /// The activity codes identifier
         /// </summary>
-        ApportionmentsId,
+        ActivityCodesId,
 
         /// <summary>
-        /// The appropriation documents identifier
+        /// The actuals identifier
         /// </summary>
-        AppropriationDocumentsId,
+        ActualsId,
 
         /// <summary>
-        /// The division identifier
+        /// The administrative requests identifier
         /// </summary>
-        DivisionId,
+        AdministrativeRequestsId,
+
+        /// <summary>
+        /// The allocations identifier
+        /// </summary>
+        AllocationsId,
+
+        /// <summary>
+        /// The allowance holders identifier
+        /// </summary>
+        AllowanceHoldersId,
+
+        /// <summary>
+        /// The american rescue plan carryover estimates identifier
+        /// </summary>
+        AmericanRescuePlanCarryoverEstimatesId,
+
+        /// <summary>
+        /// The annual carryover estimates identifier
+        /// </summary>
+        AnnualCarryoverEstimatesId,
+
+        /// <summary>
+        /// The annual carryover survey identifier
+        /// </summary>
+        AnnualCarryoverSurveyId,
+
+        /// <summary>
+        /// The annual reimbursable estimates identifier
+        /// </summary>
+        AnnualReimbursableEstimatesId,
+
+        /// <summary>
+        /// The annual reimbursable survey identifier
+        /// </summary>
+        AnnualReimbursableSurveyId,
 
         /// <summary>
         /// The application tables identifier
@@ -45,34 +112,49 @@ namespace BudgetExecution
         ApplicationTablesId,
 
         /// <summary>
-        /// The allowance holder identifier
+        /// The apportionment data identifier
         /// </summary>
-        AllowanceHoldersId,
+        ApportionmentDataId,
 
         /// <summary>
-        /// The administrative requests identifier
+        /// The appropriation available balances identifier
         /// </summary>
-        AdministrativeRequestsId,
-        
+        AppropriationAvailableBalancesId,
+
         /// <summary>
-        /// The appropriation identifier
+        /// The appropriation documents identifier
+        /// </summary>
+        AppropriationDocumentsId,
+
+        /// <summary>
+        /// The appropriation level authority identifier
+        /// </summary>
+        AppropriationLevelAuthorityId,
+
+        /// <summary>
+        /// The appropriations identifier
         /// </summary>
         AppropriationsId,
-        
-        /// <summary>
-        /// The activity identifier
-        /// </summary>
-        ActivityCodesId,
 
         /// <summary>
-        /// The budget resource execution identifier
+        /// The budgetary resource execution identifier
         /// </summary>
-        BudgetResourceExecutionId,
-        
+        BudgetaryResourceExecutionId,
+
+        /// <summary>
+        /// The budget controls identifier
+        /// </summary>
+        BudgetControlsId,
+
         /// <summary>
         /// The budget documents identifier
         /// </summary>
         BudgetDocumentsId,
+
+        /// <summary>
+        /// The budget object classes identifier
+        /// </summary>
+        BudgetObjectClassesId,
 
         /// <summary>
         /// The budget outlays identifier
@@ -80,34 +162,19 @@ namespace BudgetExecution
         BudgetOutlaysId,
 
         /// <summary>
-        /// The budget control values identifier
+        /// The capital planning investment codes identifier
         /// </summary>
-        BudgetControlValuesId,
+        CapitalPlanningInvestmentCodesId,
 
         /// <summary>
-        /// The budget object class identifier
+        /// The carryover apportionments identifier
         /// </summary>
-        BudgetObjectClassesId,
-
-        /// <summary>
-        /// The carryover estimates identifier
-        /// </summary>
-        CarryoverEstimatesId,
+        CarryoverApportionmentsId,
 
         /// <summary>
         /// The carryover outlays identifier
         /// </summary>
         CarryoverOutlaysId,
-        
-        /// <summary>
-        /// The carryover reqeusts identifier
-        /// </summary>
-        CarryoverReqeustsId,
-
-        /// <summary>
-        /// The carryover survey identifier
-        /// </summary>
-        CarryoverSurveyId,
 
         /// <summary>
         /// The carryover requests identifier
@@ -120,24 +187,44 @@ namespace BudgetExecution
         ChangesId,
 
         /// <summary>
+        /// The column schema identifier
+        /// </summary>
+        ColumnSchemaId,
+
+        /// <summary>
+        /// The compass errors identifier
+        /// </summary>
+        CompassErrorsId,
+
+        /// <summary>
         /// The compass levels identifier
         /// </summary>
         CompassLevelsId,
 
         /// <summary>
+        /// The compass outlays identifier
+        /// </summary>
+        CompassOutlaysId,
+
+        /// <summary>
+        /// The congressional controls identifier
+        /// </summary>
+        CongressionalControlsId,
+
+        /// <summary>
         /// The congressional reprogrammings identifier
         /// </summary>
         CongressionalReprogrammingsId,
-        
-        /// <summary>
-        /// The information technology identifier
-        /// </summary>
-        CpicId,
 
         /// <summary>
         /// The contacts identifier
         /// </summary>
         ContactsId,
+
+        /// <summary>
+        /// The cost areas identifier
+        /// </summary>
+        CostAreasId,
 
         /// <summary>
         /// The data rule descriptions identifier
@@ -150,179 +237,294 @@ namespace BudgetExecution
         DefactosId,
 
         /// <summary>
-        /// The document control numbers identifier
+        /// The deobligation activity identifier
         /// </summary>
-        DocumentControlNumbersId,
-        
-        /// <summary>
-        /// The document identifier
-        /// </summary>
-        DocumentsId,
-        
+        DeobligationActivityId,
+
         /// <summary>
         /// The deobligations identifier
         /// </summary>
         DeobligationsId,
-        
-        /// <summary>
-        /// The execution tables identifier
-        /// </summary>
-        ExecutionTablesId,
 
         /// <summary>
-        /// The full time equivalents identifier
+        /// The document control numbers identifier
         /// </summary>
-        FullTimeEquivalentsId,
-        
+        DocumentControlNumbersId,
+
         /// <summary>
-        /// The fiscal year identifier
+        /// The documents identifier
         /// </summary>
-        FiscalYearsId,
-        
+        DocumentsId,
+
         /// <summary>
-        /// The fund identifier
+        /// The earmark codes identifier
         /// </summary>
-        FundsId,
-        
+        EarmarkCodesId,
+
         /// <summary>
-        /// The finance object class identifier
+        /// The earmarks identifier
+        /// </summary>
+        EarmarksId,
+
+        /// <summary>
+        /// The expenditures identifier
+        /// </summary>
+        ExpendituresId,
+
+        /// <summary>
+        /// The federal holidays identifier
+        /// </summary>
+        FederalHolidaysId,
+
+        /// <summary>
+        /// The finance object classes identifier
         /// </summary>
         FinanceObjectClassesId,
+
+        /// <summary>
+        /// The fiscal years identifier
+        /// </summary>
+        FiscalYearsId,
+
+        /// <summary>
+        /// The fiscal years back up identifier
+        /// </summary>
+        FiscalYearsBackUpId,
+
+        /// <summary>
+        /// The fund categories identifier
+        /// </summary>
+        FundCategoriesId,
+
+        /// <summary>
+        /// The funds identifier
+        /// </summary>
+        FundsId,
+
+        /// <summary>
+        /// The fund symbols identifier
+        /// </summary>
+        FundSymbolsId,
+
+        /// <summary>
+        /// The general ledger accounts identifier
+        /// </summary>
+        GeneralLedgerAccountsId,
+
+        /// <summary>
+        /// The goals identifier
+        /// </summary>
+        GoalsId,
+
+        /// <summary>
+        /// The gross authority identifier
+        /// </summary>
+        GrossAuthorityId,
+
+        /// <summary>
+        /// The gross utilization identifier
+        /// </summary>
+        GrossUtilizationId,
 
         /// <summary>
         /// The growth rates identifier
         /// </summary>
         GrowthRatesId,
-        
+
         /// <summary>
-        /// The goal identifier
+        /// The gs pay scales identifier
         /// </summary>
-        GoalsId,
+        GsPayScalesId,
 
         /// <summary>
         /// The headquarters authority identifier
         /// </summary>
         HeadquartersAuthorityId,
-        
+
         /// <summary>
-        /// The human resource organization identifier
+        /// The headquarters offices identifier
+        /// </summary>
+        HeadquartersOfficesId,
+
+        /// <summary>
+        /// The human resource organizations identifier
         /// </summary>
         HumanResourceOrganizationsId,
 
         /// <summary>
-        /// The infrastructure accounts identifier
+        /// The images identifier
         /// </summary>
-        InfrastructureAccountsId,
-        
+        ImagesId,
+
         /// <summary>
-        /// The identifier
+        /// The inflation reduction act carryover estimates identifier
         /// </summary>
-        Id,
+        InflationReductionActCarryoverEstimatesId,
+
+        /// <summary>
+        /// The jobs act carryover estimates identifier
+        /// </summary>
+        JobsActCarryoverEstimatesId,
+
+        /// <summary>
+        /// The messages identifier
+        /// </summary>
+        MessagesId,
+
+        /// <summary>
+        /// The monthly actuals identifier
+        /// </summary>
+        MonthlyActualsId,
+
+        /// <summary>
+        /// The monthly ledger account balances identifier
+        /// </summary>
+        MonthlyLedgerAccountBalancesId,
 
         /// <summary>
         /// The monthly outlays identifier
         /// </summary>
         MonthlyOutlaysId,
-        
+
         /// <summary>
-        /// The national program identifier
+        /// The national programs identifier
         /// </summary>
         NationalProgramsId,
-        
-        /// <summary>
-        /// The ns
-        /// </summary>
-        NS = -1,
 
         /// <summary>
         /// The object class outlays identifier
         /// </summary>
         ObjectClassOutlaysId,
-        
+
         /// <summary>
-        /// The objective identifier
+        /// The objectives identifier
         /// </summary>
         ObjectivesId,
-        
+
         /// <summary>
-        /// The organization identifier
+        /// The obligation activity identifier
         /// </summary>
-        OrganizationsId,
-        
+        ObligationActivityId,
+
         /// <summary>
-        /// The obligation identifier
+        /// The obligations identifier
         /// </summary>
         ObligationsId,
 
         /// <summary>
-        /// The program descriptions identifier
+        /// The open commitments identifier
         /// </summary>
-        ProgramDescriptionsId,
-        
+        OpenCommitmentsId,
+
         /// <summary>
-        /// The program project identifier
+        /// The operating plans identifier
         /// </summary>
-        ProgramProjectsId,
-        
+        OperatingPlansId,
+
         /// <summary>
-        /// The payroll obligation identifier
+        /// The operating plan updates identifier
+        /// </summary>
+        OperatingPlanUpdatesId,
+
+        /// <summary>
+        /// The organizations identifier
+        /// </summary>
+        OrganizationsId,
+
+        /// <summary>
+        /// The pay periods identifier
+        /// </summary>
+        PayPeriodsId,
+
+        /// <summary>
+        /// The payroll activity identifier
         /// </summary>
         PayrollActivityId,
 
         /// <summary>
-        /// The leave projection identifier
+        /// The payroll authority identifier
         /// </summary>
         PayrollAuthorityId,
 
         /// <summary>
-        /// The payroll hours identifier
+        /// The payroll cost codes identifier
         /// </summary>
         PayrollCostCodesId,
-        
-        /// <summary>
-        /// The project cost codes identifier
-        /// </summary>
-        ProjectCostCodesId,
 
-        /// <summary>
-        /// The project identifier
-        /// </summary>
-        ProjectsId,
-        
         /// <summary>
         /// The payroll requests identifier
         /// </summary>
         PayrollRequestsId,
 
         /// <summary>
-        /// The program area identifier
+        /// The PRC identifier
         /// </summary>
-        ProgramAreasId,
-        
-        /// <summary>
-        /// The regional authority identifier
-        /// </summary>
-        RegionalAuthorityId,
-        
-        /// <summary>
-        /// The resource planning office identifier
-        /// </summary>
-        ResourcePlanningOfficesId,
+        PRCId,
 
         /// <summary>
-        /// The responsibility center identifier
+        /// The program areas identifier
         /// </summary>
-        ResponsibilityCentersId,
-        
+        ProgramAreasId,
+
+        /// <summary>
+        /// The program financing schedule identifier
+        /// </summary>
+        ProgramFinancingScheduleId,
+
+        /// <summary>
+        /// The program project descriptions identifier
+        /// </summary>
+        ProgramProjectDescriptionsId,
+
+        /// <summary>
+        /// The program projects identifier
+        /// </summary>
+        ProgramProjectsId,
+
+        /// <summary>
+        /// The project cost codes identifier
+        /// </summary>
+        ProjectCostCodesId,
+
+        /// <summary>
+        /// The projects identifier
+        /// </summary>
+        ProjectsId,
+
+        /// <summary>
+        /// The providers identifier
+        /// </summary>
+        ProvidersId,
+
+        /// <summary>
+        /// The public laws identifier
+        /// </summary>
+        PublicLawsId,
+
+        /// <summary>
+        /// The query definitions identifier
+        /// </summary>
+        QueryDefinitionsId,
+
+        /// <summary>
+        /// The recovery act identifier
+        /// </summary>
+        RecoveryActId,
+
         /// <summary>
         /// The reference tables identifier
         /// </summary>
         ReferenceTablesId,
 
         /// <summary>
-        /// The reimbursable identifier
+        /// The regional authority identifier
         /// </summary>
-        ReimbursableFundsId,
+        RegionalAuthorityId,
+
+        /// <summary>
+        /// The regional offices identifier
+        /// </summary>
+        RegionalOfficesId,
 
         /// <summary>
         /// The reimbursable agreements identifier
@@ -330,43 +532,183 @@ namespace BudgetExecution
         ReimbursableAgreementsId,
 
         /// <summary>
-        /// The reimbursable survey identifier
+        /// The reimbursable funds identifier
         /// </summary>
-        ReimbursableSurveyId,
+        ReimbursableFundsId,
 
         /// <summary>
-        /// The supplemental identifier
+        /// The reports identifier
         /// </summary>
-        StatusOfSupplementalFundingId,
+        ReportsId,
 
         /// <summary>
-        /// The status of jobs act funding identifier
+        /// The reprogrammings identifier
         /// </summary>
-        StatusOfJobsActFundingId,
+        ReprogrammingsId,
+
+        /// <summary>
+        /// The resource planning offices identifier
+        /// </summary>
+        ResourcePlanningOfficesId,
+
+        /// <summary>
+        /// The resources identifier
+        /// </summary>
+        ResourcesId,
+
+        /// <summary>
+        /// The responsibility centers identifier
+        /// </summary>
+        ResponsibilityCentersId,
+
+        /// <summary>
+        /// The schema types identifier
+        /// </summary>
+        SchemaTypesId,
+
+        /// <summary>
+        /// The site activity identifier
+        /// </summary>
+        SiteActivityId,
+
+        /// <summary>
+        /// The site project codes identifier
+        /// </summary>
+        SiteProjectCodesId,
+
+        /// <summary>
+        /// The special accounts identifier
+        /// </summary>
+        SpecialAccountsId,
+
+        /// <summary>
+        /// The spending documents identifier
+        /// </summary>
+        SpendingDocumentsId,
+
+        /// <summary>
+        /// The spending rates identifier
+        /// </summary>
+        SpendingRatesId,
+
+        /// <summary>
+        /// The state grant obligations identifier
+        /// </summary>
+        StateGrantObligationsId,
+
+        /// <summary>
+        /// The state organizations identifier
+        /// </summary>
+        StateOrganizationsId,
+
+        /// <summary>
+        /// The status of american rescue plan funds identifier
+        /// </summary>
+        StatusOfAmericanRescuePlanFundsId,
+
+        /// <summary>
+        /// The status of appropriations identifier
+        /// </summary>
+        StatusOfAppropriationsId,
+
+        /// <summary>
+        /// The status of budgetary resources identifier
+        /// </summary>
+        StatusOfBudgetaryResourcesId,
+
+        /// <summary>
+        /// The status of earmarks identifier
+        /// </summary>
+        StatusOfEarmarksId,
 
         /// <summary>
         /// The status of funds identifier
         /// </summary>
         StatusOfFundsId,
-        
+
         /// <summary>
-        /// The site identifier
+        /// The status of inflation reduction act funds identifier
+        /// </summary>
+        StatusOfInflationReductionActFundsId,
+
+        /// <summary>
+        /// The status of jobs act funds identifier
+        /// </summary>
+        StatusOfJobsActFundsId,
+
+        /// <summary>
+        /// The status of supplemental funds identifier
+        /// </summary>
+        StatusOfSupplementalFundsId,
+
+        /// <summary>
+        /// The sub appropriations identifier
+        /// </summary>
+        SubAppropriationsId,
+
+        /// <summary>
+        /// The superfund sites identifier
         /// </summary>
         SuperfundSitesId,
 
         /// <summary>
-        /// The transfer identifier
+        /// The supplemental carryover estimates identifier
         /// </summary>
-        TransfersId,
-        
-        /// <summary>
-        /// The travel obligation identifier
-        /// </summary>
-        TravelActivityId,
+        SupplementalCarryoverEstimatesId,
 
         /// <summary>
-        /// The work code identifier
+        /// The supplemental reimburseable estimates identifier
         /// </summary>
-        WorkCodesId
+        SupplementalReimburseableEstimatesId,
+
+        /// <summary>
+        /// The transfer activity identifier
+        /// </summary>
+        TransferActivityId,
+
+        /// <summary>
+        /// The transfers identifier
+        /// </summary>
+        TransfersId,
+
+        /// <summary>
+        /// The trans types identifier
+        /// </summary>
+        TransTypesId,
+
+        /// <summary>
+        /// The treasury symbols identifier
+        /// </summary>
+        TreasurySymbolsId,
+
+        /// <summary>
+        /// The unliquidated obligations identifier
+        /// </summary>
+        UnliquidatedObligationsId,
+
+        /// <summary>
+        /// The unobligated authority identifier
+        /// </summary>
+        UnobligatedAuthorityId,
+
+        /// <summary>
+        /// The unobligated balances identifier
+        /// </summary>
+        UnobligatedBalancesId,
+
+        /// <summary>
+        /// The URL identifier
+        /// </summary>
+        URLId,
+
+        /// <summary>
+        /// The work codes identifier
+        /// </summary>
+        WorkCodesId,
+
+        /// <summary>
+        /// The full time equivalents identifier
+        /// </summary>
+        FullTimeEquivalentsId
     }
 }
